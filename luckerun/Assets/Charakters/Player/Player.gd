@@ -1,4 +1,4 @@
-class_name player
+class_name Lucke
 extends CharacterBody2D
 
 

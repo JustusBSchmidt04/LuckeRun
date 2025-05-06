@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=4 uid="uid://7mffy5d5o5i5"]
 
 [ext_resource type="Texture2D" uid="uid://d02h66a4n7vr4" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0001.png" id="4_px8sv"]
-[ext_resource type="PackedScene" uid="uid://dh3dhqrbax7l1" path="res://Assets/Charakters/Player/Player.tscn" id="4_q0t31"]
 [ext_resource type="Texture2D" uid="uid://coi1kp14qvs54" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0002.png" id="5_c6rm1"]
+[ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="5_ywvsk"]
 [ext_resource type="Texture2D" uid="uid://cwcn8oqaows4l" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0003.png" id="6_x3jrd"]
 [ext_resource type="Texture2D" uid="uid://ckvj52mrkctxe" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0000.png" id="7_sh4o7"]
 
@@ -43,5 +43,4 @@ tile_set = SubResource("TileSet_wmdud")
 
 [node name="Background" type="TileMapLayer" parent="Map"]
 
-[node name="Player" parent="." instance=ExtResource("4_q0t31")]
-position = Vector2(-2, 10)
+[node name="Luckes_Body" parent="." instance=ExtResource("5_ywvsk")]
