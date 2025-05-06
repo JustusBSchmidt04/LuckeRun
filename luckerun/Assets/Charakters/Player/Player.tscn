@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://dh3dhqrbax7l1"]
+
+[ext_resource type="Script" uid="uid://c45ge52lawrh5" path="res://Assets/Charakters/Player/Player.gd" id="1_tjdk6"]
+[ext_resource type="Texture2D" uid="uid://bxyrsyat40ad" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Characters/tile_0000.png" id="2_emh3w"]
+[ext_resource type="Texture2D" uid="uid://dl6b64dtec2sg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Characters/tile_0001.png" id="3_k36wv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hm0fy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_emh3w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_k36wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_emh3w")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_grwui"]
+size = Vector2(57, 57)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_tjdk6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(149, 63)
+scale = Vector2(2.54167, 2.45833)
+sprite_frames = SubResource("SpriteFrames_hm0fy")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(150, 60)
+shape = SubResource("RectangleShape2D_grwui")
