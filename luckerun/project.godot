@@ -11,9 +11,15 @@ config_version=5
 [application]
 
 config/name="LuckeRun"
-run/main_scene="res://Szene/World1/World1.tscn"
+run/main_scene="uid://5opfomoph68k"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1024
+window/size/viewport_height=600
+window/stretch/mode="viewport"
 
 [input]
 
