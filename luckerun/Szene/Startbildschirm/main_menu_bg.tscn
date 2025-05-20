@@ -30,6 +30,7 @@ action_mode = 0
 text = "Play"
 
 [node name="OptionsButton" type="Button" parent="MainMenu" node_paths=PackedStringArray("shortcut_context")]
+layout_mode = 0
 offset_left = 378.0
 offset_top = 226.0
 offset_right = 628.0
@@ -42,6 +43,7 @@ action_mode = 0
 text = "Options"
 
 [node name="QuitButton" type="Button" parent="MainMenu" node_paths=PackedStringArray("shortcut_context")]
+layout_mode = 0
 offset_left = 381.0
 offset_top = 418.0
 offset_right = 631.0
