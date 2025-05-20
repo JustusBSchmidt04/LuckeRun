@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2delqx8bidb6"]
+
+[ext_resource type="Script" uid="uid://b5rox54tye43o" path="res://control.gd" id="1_klhi8"]
+
+[sub_resource type="Theme" id="Theme_v464q"]
+
+[node name="OptionScreen" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_klhi8")
+
+[node name="Platzhalter" type="Button" parent="Control" node_paths=PackedStringArray("shortcut_context")]
+offset_left = 409.0
+offset_top = 87.0
+offset_right = 659.0
+offset_bottom = 257.0
+tooltip_text = "Starts the Game"
+shortcut_context = NodePath(".")
+theme = SubResource("Theme_v464q")
+theme_override_colors/font_hover_color = Color(0.574407, 0.436859, 0.887789, 1)
+action_mode = 0
+text = "Hier werden Einstellungen sein"
+
+[node name="BackToMain" type="Button" parent="Control" node_paths=PackedStringArray("shortcut_context")]
+offset_left = 401.0
+offset_top = 303.0
+offset_right = 651.0
+offset_bottom = 473.0
+tooltip_text = "Starts the Game"
+shortcut_context = NodePath(".")
+theme = SubResource("Theme_v464q")
+theme_override_colors/font_hover_color = Color(0.574407, 0.436859, 0.887789, 1)
+action_mode = 0
+text = "Back"
