@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://5opfomoph68k"]
+[gd_scene load_steps=4 format=3 uid="uid://5opfomoph68k"]
 
 [ext_resource type="Script" uid="uid://cvqiaiccpsrgp" path="res://Szene/Startbildschirm/main_menu.gd" id="1_u6l3h"]
+[ext_resource type="Texture2D" uid="uid://d0du50csjd4oe" path="res://Assets/Background/THMBackground.jpg" id="2_idj2g"]
 
 [sub_resource type="Theme" id="Theme_u6l3h"]
 
@@ -57,3 +58,11 @@ text = "Quit"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(512, 301)
+
+[node name="ThmBackground" type="Sprite2D" parent="."]
+show_behind_parent = true
+light_mask = 0
+visibility_layer = 512
+position = Vector2(516, 273)
+scale = Vector2(0.641042, 0.641042)
+texture = ExtResource("2_idj2g")
