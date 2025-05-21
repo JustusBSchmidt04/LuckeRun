@@ -5,8 +5,8 @@ extends CharacterBody2D
 @export var tilemap: TileMapLayer
 @export var death: String = "Death"
 
-@export var gravity: float = 425
-@export var speed: float = 50
+@export var gravity: float = 700
+@export var speed: float = 80
 const jump_force = -270
 
 func _ready():
