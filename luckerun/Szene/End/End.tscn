@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckrhpmh7oj700"]
+
+[ext_resource type="Texture2D" uid="uid://l6g57qj6s2v8" path="res://Assets/RestAssets/CatRose.jpg" id="1_kjlux"]
+[ext_resource type="Script" uid="uid://bdl8nu5510v12" path="res://Szene/End/quit_button.gd" id="2_gketx"]
+[ext_resource type="AudioStream" uid="uid://dyj2spy4bvbfp" path="res://Sounds/WinConfettiSound.mp3" id="3_nbpin"]
+
+[sub_resource type="Theme" id="Theme_kjlux"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+top_level = true
+offset_left = 431.0
+offset_top = 90.0
+offset_right = 649.0
+offset_bottom = 183.0
+theme_override_font_sizes/font_size = 50
+text = "You won"
+
+[node name="CatRose" type="Sprite2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(512, 299)
+scale = Vector2(1.06146, 0.61731)
+texture = ExtResource("1_kjlux")
+
+[node name="QuitButton" type="Button" parent="." node_paths=PackedStringArray("shortcut_context")]
+offset_left = 863.0
+offset_top = 530.0
+offset_right = 958.0
+offset_bottom = 573.0
+tooltip_text = "Close the Game"
+shortcut_context = NodePath(".")
+theme = SubResource("Theme_kjlux")
+theme_override_colors/font_hover_color = Color(0.501961, 0.729412, 0.141176, 1)
+theme_override_font_sizes/font_size = 25
+action_mode = 0
+text = "Quit"
+script = ExtResource("2_gketx")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_nbpin")
+volume_db = -13.215
+autoplay = true
