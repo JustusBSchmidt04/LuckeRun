@@ -15,38 +15,26 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_klhi8")
 
-[node name="Platzhalter" type="Button" parent="Control" node_paths=PackedStringArray("shortcut_context")]
-layout_mode = 0
-offset_left = 409.0
-offset_top = 87.0
-offset_right = 659.0
-offset_bottom = 257.0
-tooltip_text = "Starts the Game"
-shortcut_context = NodePath(".")
-theme = SubResource("Theme_v464q")
-theme_override_colors/font_hover_color = Color(0.574407, 0.436859, 0.887789, 1)
-action_mode = 0
-text = "Hier werden Einstellungen sein"
-
 [node name="BackToMain" type="Button" parent="Control" node_paths=PackedStringArray("shortcut_context")]
 layout_mode = 0
-offset_left = 401.0
-offset_top = 303.0
-offset_right = 651.0
-offset_bottom = 473.0
+offset_left = 415.0
+offset_top = 372.0
+offset_right = 634.0
+offset_bottom = 506.0
 tooltip_text = "Starts the Game"
 shortcut_context = NodePath(".")
 theme = SubResource("Theme_v464q")
-theme_override_colors/font_hover_color = Color(0.574407, 0.436859, 0.887789, 1)
+theme_override_colors/font_hover_color = Color(0.501961, 0.729412, 0.141176, 1)
+theme_override_font_sizes/font_size = 25
 action_mode = 0
 text = "Back"
 
 [node name="VolumeSlider" type="HSlider" parent="Control"]
 layout_mode = 2
-offset_left = 141.0
-offset_top = 112.0
-offset_right = 316.0
-offset_bottom = 157.0
+offset_left = 439.0
+offset_top = 144.0
+offset_right = 614.0
+offset_bottom = 189.0
 tooltip_text = "Change Volume"
 min_value = -30.0
 max_value = 0.0
