@@ -120,7 +120,7 @@ script = ExtResource("13_tqg4t")
 [node name="Luckes_Body" parent="." instance=ExtResource("5_ywvsk")]
 position = Vector2(124, 122)
 
-[node name="Marker2D" type="Marker2D" parent="."]
+[node name="Respawnpoint" type="Marker2D" parent="."]
 position = Vector2(125, 115)
 
 [node name="NextLevel" parent="." instance=ExtResource("14_rp4y1")]

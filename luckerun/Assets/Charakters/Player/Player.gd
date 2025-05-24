@@ -11,7 +11,7 @@ const jump_force = -270
 
 func _ready():
 	if not spawn_point:
-		spawn_point = get_node("/root/World/Marker2D")
+		spawn_point = get_node("/root/World/Respawnpoint")
 	if tilemap == null: 
 		tilemap = get_node_or_null("/root/World/Map/Death")
 	if spawn_point == null:
