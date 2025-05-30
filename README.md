@@ -1,2 +1,2 @@
 # LuckeRun
-Implementierung zum Softwareprojekt
+Installationsanweisungen:
