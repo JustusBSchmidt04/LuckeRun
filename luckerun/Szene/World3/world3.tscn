@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://76kvbssudepc"]
+[gd_scene load_steps=32 format=4 uid="uid://76kvbssudepc"]
 
 [ext_resource type="Script" uid="uid://dpu1qebxpyvjk" path="res://Szene/World1/World1.tres.gd" id="1_o6r5l"]
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_75hha"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="14_x0bhd"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="15_mjdkx"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Szene/timer.tscn" id="16_2rynv"]
+[ext_resource type="Script" uid="uid://g0j8llrliyp3" path="res://Szene/SzenenWechsel/next_level_end.gd" id="16_wlbpv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3f50i"]
 texture = ExtResource("2_75hha")
@@ -121,13 +122,18 @@ script = ExtResource("13_vs2ue")
 [node name="Luckes_Body" parent="." instance=ExtResource("14_x0bhd")]
 position = Vector2(124, 122)
 
+[node name="TimerFollower" type="CanvasLayer" parent="Luckes_Body"]
+
+[node name="Timer" parent="Luckes_Body/TimerFollower" instance=ExtResource("16_2rynv")]
+offset_left = 2.0
+offset_right = 84.0
+
 [node name="Respawnpoint" type="Marker2D" parent="."]
 position = Vector2(125, 115)
 
-[node name="NextLevel" parent="." instance=ExtResource("15_mjdkx")]
+[node name="NextLevelEnd" parent="." instance=ExtResource("15_mjdkx")]
 position = Vector2(1447, 402)
-
-[node name="Timer" parent="." instance=ExtResource("16_2rynv")]
+script = ExtResource("16_wlbpv")
 
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]

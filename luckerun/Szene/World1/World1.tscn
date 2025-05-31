@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://7mffy5d5o5i5"]
+[gd_scene load_steps=32 format=4 uid="uid://7mffy5d5o5i5"]
 
 [ext_resource type="Script" uid="uid://dpu1qebxpyvjk" path="res://Szene/World1/World1.tres.gd" id="1_sh4o7"]
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_i7wq0"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bryfdpcpbnkii" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0004.png" id="13_rp4y1"]
 [ext_resource type="Script" uid="uid://jjpixvy4ke38" path="res://Szene/World1/death.gd" id="13_tqg4t"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="14_rp4y1"]
+[ext_resource type="Script" uid="uid://bqqg5i45mpgd3" path="res://Szene/SzenenWechsel/next_level_2.gd" id="16_3f50i"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Szene/timer.tscn" id="16_i7wq0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3f50i"]
@@ -121,13 +122,18 @@ script = ExtResource("13_tqg4t")
 [node name="Luckes_Body" parent="." instance=ExtResource("5_ywvsk")]
 position = Vector2(124, 122)
 
+[node name="TimerFollower" type="CanvasLayer" parent="Luckes_Body"]
+
+[node name="Timer" parent="Luckes_Body/TimerFollower" instance=ExtResource("16_i7wq0")]
+offset_left = 2.0
+offset_right = 84.0
+
 [node name="Respawnpoint" type="Marker2D" parent="."]
 position = Vector2(125, 115)
 
-[node name="NextLevel" parent="." instance=ExtResource("14_rp4y1")]
+[node name="NextLevel2" parent="." instance=ExtResource("14_rp4y1")]
 position = Vector2(623, 113)
-
-[node name="Timer" parent="." instance=ExtResource("16_i7wq0")]
+script = ExtResource("16_3f50i")
 
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]

@@ -2,5 +2,5 @@ extends Node2D
 
 
 func _on_area_2d_body_entered(body):
-	get_tree().change_scene_to_file("res://Szene/World1/World1.tscn")
+	get_tree().change_scene_to_file("res://Szene/End/End.tscn")
 	pass # Replace with function body.
