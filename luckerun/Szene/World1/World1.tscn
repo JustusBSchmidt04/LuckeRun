@@ -135,6 +135,10 @@ position = Vector2(125, 115)
 position = Vector2(623, 113)
 script = ExtResource("16_3f50i")
 
+[node name="NextLevel3" parent="." instance=ExtResource("14_rp4y1")]
+position = Vector2(-142, -14)
+script = ExtResource("16_3f50i")
+
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]
 [connection signal="child_entered_tree" from="Luckes_Body" to="." method="_on_luckes_body_child_entered_tree"]

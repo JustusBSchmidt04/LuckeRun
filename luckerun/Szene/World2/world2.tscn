@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://ca4hoanbvit0h"]
+[gd_scene load_steps=30 format=4 uid="uid://d1rp3srhl0obx"]
 
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_75hha"]
 [ext_resource type="Texture2D" uid="uid://coi1kp14qvs54" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0002.png" id="3_kvs7f"]

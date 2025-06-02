@@ -1,12 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://ckrhpmh7oj700"]
+[gd_scene load_steps=10 format=3 uid="uid://ckrhpmh7oj700"]
 
+[ext_resource type="Script" uid="uid://bayyj3q14lr0e" path="res://Szene/End/end.gd" id="1_ht761"]
 [ext_resource type="Texture2D" uid="uid://l6g57qj6s2v8" path="res://Assets/RestAssets/CatRose.jpg" id="1_kjlux"]
 [ext_resource type="Script" uid="uid://bdl8nu5510v12" path="res://Szene/End/quit_button.gd" id="2_gketx"]
 [ext_resource type="AudioStream" uid="uid://dyj2spy4bvbfp" path="res://Sounds/WinConfettiSound.mp3" id="3_nbpin"]
+[ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Szene/timer.tscn" id="5_s07lu"]
+[ext_resource type="Script" uid="uid://ctvlndmkbipq4" path="res://Szene/timerend.gd" id="6_s07lu"]
 
 [sub_resource type="Theme" id="Theme_kjlux"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="Theme" id="Theme_ht761"]
+
+[sub_resource type="Theme" id="Theme_s07lu"]
+
+[node name="EndScreen" type="Node2D"]
+script = ExtResource("1_ht761")
 
 [node name="TextEdit" type="TextEdit" parent="."]
 top_level = true
@@ -20,8 +28,8 @@ text = "You won"
 [node name="CatRose" type="Sprite2D" parent="."]
 light_mask = 2
 visibility_layer = 2
-position = Vector2(512, 299)
-scale = Vector2(1.06146, 0.61731)
+position = Vector2(512, 301.5)
+scale = Vector2(1.06146, 0.622524)
 texture = ExtResource("1_kjlux")
 
 [node name="QuitButton" type="Button" parent="." node_paths=PackedStringArray("shortcut_context")]
@@ -42,3 +50,45 @@ script = ExtResource("2_gketx")
 stream = ExtResource("3_nbpin")
 volume_db = -13.215
 autoplay = true
+
+[node name="TimerEnd" parent="." instance=ExtResource("5_s07lu")]
+offset_left = 488.0
+offset_top = 520.0
+offset_right = 752.0
+offset_bottom = 594.0
+theme = SubResource("Theme_ht761")
+script = ExtResource("6_s07lu")
+
+[node name="MiSec2" type="Label" parent="TimerEnd"]
+layout_mode = 0
+offset_left = 152.0
+offset_right = 213.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 2
+
+[node name="Sec2" type="Label" parent="TimerEnd"]
+layout_mode = 0
+offset_left = 80.0
+offset_right = 144.0
+offset_bottom = 80.0
+theme = SubResource("Theme_s07lu")
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 2
+
+[node name="Min2" type="Label" parent="TimerEnd"]
+layout_mode = 0
+offset_left = 8.0
+offset_right = 72.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 2
+
+[node name="TextEdit2" type="TextEdit" parent="."]
+top_level = true
+offset_left = 208.0
+offset_top = 512.0
+offset_right = 478.0
+offset_bottom = 597.0
+theme_override_font_sizes/font_size = 50
+text = "Your Time:"

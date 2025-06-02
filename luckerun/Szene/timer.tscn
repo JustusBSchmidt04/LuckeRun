@@ -4,7 +4,7 @@
 
 [node name="Timer" type="Panel"]
 offset_right = 82.0
-offset_bottom = 26.0
+offset_bottom = 32.0
 script = ExtResource("1_uaqo8")
 
 [node name="MiSec" type="Label" parent="."]
