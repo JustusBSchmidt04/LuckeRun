@@ -32,7 +32,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_grwui"]
-size = Vector2(17, 43)
+size = Vector2(21, 43)
 
 [node name="Luckes_Body" type="CharacterBody2D"]
 script = ExtResource("1_0au72")
@@ -41,11 +41,10 @@ script = ExtResource("1_0au72")
 position = Vector2(4.5, 0.229358)
 scale = Vector2(0.343137, 0.352337)
 sprite_frames = SubResource("SpriteFrames_hm0fy")
-animation = &"walk"
 speed_scale = 50.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2.5, 3)
+position = Vector2(4.5, 3)
 shape = SubResource("RectangleShape2D_grwui")
 
 [node name="Camera2D" type="Camera2D" parent="."]
