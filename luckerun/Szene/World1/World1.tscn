@@ -1,38 +1,38 @@
 [gd_scene load_steps=32 format=4 uid="uid://7mffy5d5o5i5"]
 
-[ext_resource type="Script" uid="uid://bae0tlb0cko1b" path="res://Szene/World1/world_1.gd" id="1_3f50i"]
-[ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_i7wq0"]
-[ext_resource type="Texture2D" uid="uid://coi1kp14qvs54" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0002.png" id="5_c6rm1"]
-[ext_resource type="Texture2D" uid="uid://crt7npjnegeu2" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0008.png" id="5_x3jrd"]
-[ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="5_ywvsk"]
-[ext_resource type="Texture2D" uid="uid://cn4vlh63vvfys" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0009.png" id="6_sh4o7"]
-[ext_resource type="Texture2D" uid="uid://cwcn8oqaows4l" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0003.png" id="6_x3jrd"]
-[ext_resource type="Texture2D" uid="uid://d4iobbedrpdld" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0010.png" id="7_tqg4t"]
-[ext_resource type="Texture2D" uid="uid://cui7qng305xc4" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0011.png" id="8_rp4y1"]
-[ext_resource type="Texture2D" uid="uid://2pna8m2mvr41" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0016.png" id="9_i7wq0"]
-[ext_resource type="Texture2D" uid="uid://gj3ntwwiitpp" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0000.png" id="10_3f50i"]
-[ext_resource type="Texture2D" uid="uid://t5gxqqt3x5nw" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0020.png" id="11_jlc4g"]
-[ext_resource type="Texture2D" uid="uid://bryfdpcpbnkii" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0004.png" id="13_rp4y1"]
-[ext_resource type="Script" uid="uid://jjpixvy4ke38" path="res://Szene/World1/death.gd" id="13_tqg4t"]
-[ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="14_rp4y1"]
-[ext_resource type="Script" uid="uid://bqqg5i45mpgd3" path="res://Szene/SzenenWechsel/next_level_2.gd" id="16_3f50i"]
-[ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Szene/timer.tscn" id="16_i7wq0"]
+[ext_resource type="Script" uid="uid://bae0tlb0cko1b" path="res://Szene/World1/world_1.gd" id="1_u16ad"]
+[ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_o810c"]
+[ext_resource type="Texture2D" uid="uid://coi1kp14qvs54" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0002.png" id="3_qtq0n"]
+[ext_resource type="Texture2D" uid="uid://cwcn8oqaows4l" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0003.png" id="4_p1uq2"]
+[ext_resource type="Texture2D" uid="uid://crt7npjnegeu2" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0008.png" id="5_8dn62"]
+[ext_resource type="Texture2D" uid="uid://cn4vlh63vvfys" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0009.png" id="6_jnumt"]
+[ext_resource type="Texture2D" uid="uid://d4iobbedrpdld" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0010.png" id="7_aygvu"]
+[ext_resource type="Texture2D" uid="uid://cui7qng305xc4" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0011.png" id="8_3svld"]
+[ext_resource type="Texture2D" uid="uid://2pna8m2mvr41" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0016.png" id="9_4tgpp"]
+[ext_resource type="Texture2D" uid="uid://gj3ntwwiitpp" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0000.png" id="10_88xnx"]
+[ext_resource type="Texture2D" uid="uid://t5gxqqt3x5nw" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0020.png" id="11_d4qoo"]
+[ext_resource type="Texture2D" uid="uid://bryfdpcpbnkii" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0004.png" id="12_o5jli"]
+[ext_resource type="Script" uid="uid://jjpixvy4ke38" path="res://Szene/World1/death.gd" id="13_mhbed"]
+[ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="14_ta6tf"]
+[ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Szene/timer.tscn" id="15_ejtqg"]
+[ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="16_p87ue"]
+[ext_resource type="Script" uid="uid://bqqg5i45mpgd3" path="res://Szene/SzenenWechsel/next_level_2.gd" id="17_5681s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3f50i"]
-texture = ExtResource("2_i7wq0")
+texture = ExtResource("2_o810c")
 texture_region_size = Vector2i(16, 14)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, 4, 4, -4, 4)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u6lte"]
-texture = ExtResource("5_c6rm1")
+texture = ExtResource("3_qtq0n")
 margins = Vector2i(0, 2)
 texture_region_size = Vector2i(16, 14)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, 4, 4, -4, 4)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d66ts"]
-texture = ExtResource("6_x3jrd")
+texture = ExtResource("4_p1uq2")
 margins = Vector2i(0, 2)
 texture_region_size = Vector2i(16, 14)
 0:0/0 = 0
@@ -46,32 +46,32 @@ sources/4 = SubResource("TileSetAtlasSource_d66ts")
 sources/0 = SubResource("TileSetAtlasSource_3f50i")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ef1er"]
-texture = ExtResource("5_x3jrd")
+texture = ExtResource("5_8dn62")
 texture_region_size = Vector2i(24, 24)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a6cbb"]
-texture = ExtResource("6_sh4o7")
+texture = ExtResource("6_jnumt")
 texture_region_size = Vector2i(24, 24)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_41m52"]
-texture = ExtResource("7_tqg4t")
+texture = ExtResource("7_aygvu")
 texture_region_size = Vector2i(24, 24)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cskq6"]
-texture = ExtResource("8_rp4y1")
+texture = ExtResource("8_3svld")
 texture_region_size = Vector2i(24, 24)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_srq2d"]
-texture = ExtResource("9_i7wq0")
+texture = ExtResource("9_4tgpp")
 texture_region_size = Vector2i(24, 24)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cthnl"]
-texture = ExtResource("10_3f50i")
+texture = ExtResource("10_88xnx")
 texture_region_size = Vector2i(24, 24)
 0:0/0 = 0
 
@@ -85,11 +85,11 @@ sources/4 = SubResource("TileSetAtlasSource_srq2d")
 sources/8 = SubResource("TileSetAtlasSource_cthnl")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5pxhd"]
-texture = ExtResource("11_jlc4g")
+texture = ExtResource("11_d4qoo")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rp4y1"]
-texture = ExtResource("13_rp4y1")
+texture = ExtResource("12_o5jli")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_ysu5b"]
@@ -100,7 +100,7 @@ sources/3 = SubResource("TileSetAtlasSource_rp4y1")
 
 [node name="World" type="Node2D"]
 position = Vector2(2, 0)
-script = ExtResource("1_3f50i")
+script = ExtResource("1_u16ad")
 
 [node name="Map" type="Node2D" parent="."]
 position = Vector2(-6, 3)
@@ -117,27 +117,27 @@ tile_set = SubResource("TileSet_ub2ox")
 [node name="Death" type="TileMapLayer" parent="Map"]
 tile_map_data = PackedByteArray("AAD0/yYAAAAAAAAAAAD1/yYAAAAAAAAAAAD2/yYAAAAAAAAAAAD3/yYAAAAAAAAAAAD4/yYAAAAAAAAAAAD5/yYAAAAAAAAAAAD6/yYAAAAAAAAAAAD7/yYAAAAAAAAAAAD8/yYAAAAAAAAAAAD9/yYAAAAAAAAAAAD+/yYAAAAAAAAAAAD//yYAAAAAAAAAAAAAACYAAAAAAAAAAAABACYAAAAAAAAAAAACACYAAAAAAAAAAAADACYAAAAAAAAAAAAEACYAAAAAAAAAAAAFACYAAAAAAAAAAAAGACYAAAAAAAAAAAAHACYAAAAAAAAAAAAIACYAAAAAAAAAAAAJACYAAAAAAAAAAAAKACYAAAAAAAAAAAALACYAAAAAAAAAAAAMACYAAAAAAAAAAAANACYAAAAAAAAAAAAOACYAAAAAAAAAAAAPACYAAAAAAAAAAAAQACYAAAAAAAAAAAARACYAAAAAAAAAAAASACYAAAAAAAAAAAATACYAAAAAAAAAAAAUACYAAAAAAAAAAAAVACYAAAAAAAAAAAAWACYAAAAAAAAAAAAXACYAAAAAAAAAAAAYACYAAAAAAAAAAAAZACYAAAAAAAAAAAAaACYAAAAAAAAAAAAbACYAAAAAAAAAAAAcACYAAAAAAAAAAAAdACYAAAAAAAAAAAAeACYAAAAAAAAAAAAfACYAAAAAAAAAAAAgACYAAAAAAAAAAAAhACYAAAAAAAAAAAAiACYAAAAAAAAAAAAjACYAAAAAAAAAAAAkACYAAAAAAAAAAAAlACYAAAAAAAAAAAAmACYAAAAAAAAAAAAnACYAAAAAAAAAAAAoACYAAAAAAAAAAAApACYAAAAAAAAAAAAqACYAAAAAAAAAAAArACYAAAAAAAAAAAAsACYAAAAAAAAAAAAtACYAAAAAAAAAAAAuACYAAAAAAAAAAAAvACYAAAAAAAAAAAAwACYAAAAAAAAAAAAxACYAAAAAAAAAAAAyACYAAAAAAAAAAAAzACYAAAAAAAAAAAA0ACYAAAAAAAAAAAA1ACYAAAAAAAAAAAA2ACYAAAAAAAAAAAA3ACYAAAAAAAAAAAA4ACYAAAAAAAAAAAA5ACYAAAAAAAAAAAA6ACYAAAAAAAAAAAA7ACYAAAAAAAAAAAA8ACYAAAAAAAAAAAA9ACYAAAAAAAAAAAA+ACYAAAAAAAAAAAA/ACYAAAAAAAAAAABAACYAAAAAAAAAAABBACYAAAAAAAAAAABCACYAAAAAAAAAAABDACYAAAAAAAAAAABEACYAAAAAAAAAAABFACYAAAAAAAAAAABGACYAAAAAAAAAAABHACYAAAAAAAAAAABIACYAAAAAAAAAAABJACYAAAAAAAAAAABKACYAAAAAAAAAAABLACYAAAAAAAAAAABMACYAAAAAAAAAAABNACYAAAAAAAAAAABOACYAAAAAAAAAAABPACYAAAAAAAAAAABQACYAAAAAAAAAAABRACYAAAAAAAAAAABSACYAAAAAAAAAAABTACYAAAAAAAAAAABUACYAAAAAAAAAAABVACYAAAAAAAAAAABWACYAAAAAAAAAAABXACYAAAAAAAAAAABYACYAAAAAAAAAAABZACYAAAAAAAAAAABaACYAAAAAAAAAAABbACYAAAAAAAAAAABcACYAAAAAAAAAAABdACYAAAAAAAAAAABeACYAAAAAAAAAAABfACYAAAAAAAAAAABgACYAAAAAAAAAAABhACYAAAAAAAAAAABiACYAAAAAAAAAAABjACYAAAAAAAAAAABkACYAAAAAAAAAAABlACYAAAAAAAAAAABmACYAAAAAAAAAAABnACYAAAAAAAAAAABoACYAAAAAAAAAAABpACYAAAAAAAAAAABqACYAAAAAAAAAAABrACYAAAAAAAAAAABsACYAAAAAAAAAAABtACYAAAAAAAAAAABuACYAAAAAAAAAAABvACYAAAAAAAAAAADz/yYAAAAAAAAAAADy/yYAAAAAAAAAAADx/yYAAAAAAAAAAADw/yYAAAAAAAAAAADv/yYAAAAAAAAAAADu/yYAAAAAAAAAAADt/yYAAAAAAAAAAADs/yYAAAAAAAAAAADr/yYAAAAAAAAAAADq/yYAAAAAAAAAAADp/yYAAAAAAAAAAADo/yYAAAAAAAAAAADn/yYAAAAAAAAAAADm/yYAAAAAAAAAAADl/yYAAAAAAAAAAADk/yYAAAAAAAAAAADj/yYAAAAAAAAAAADi/yYAAAAAAAAAAADh/yYAAAAAAAAAAADg/yYAAAAAAAAAAADf/yYAAAAAAAAAAADe/yYAAAAAAAAAAADd/yYAAAAAAAAAAABwACYAAAAAAAAAAABxACYAAAAAAAAAAAByACYAAAAAAAAAAABzACYAAAAAAAAAAAB0ACYAAAAAAAAAAAB1ACYAAAAAAAAAAAB2ACYAAAAAAAAAAAB3ACYAAAAAAAAAAAB4ACYAAAAAAAAAAAB5ACYAAAAAAAAAAAB6ACYAAAAAAAAAAAB7ACYAAAAAAAAAAAB8ACYAAAAAAAAAAAB9ACYAAAAAAAAAAAB+ACYAAAAAAAAAAAB/ACYAAAAAAAAAAACAACYAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_ysu5b")
-script = ExtResource("13_tqg4t")
+script = ExtResource("13_mhbed")
 
-[node name="Luckes_Body" parent="." instance=ExtResource("5_ywvsk")]
+[node name="Luckes_Body" parent="." instance=ExtResource("14_ta6tf")]
 position = Vector2(124, 122)
 
 [node name="TimerFollower" type="CanvasLayer" parent="Luckes_Body"]
 
-[node name="Timer" parent="Luckes_Body/TimerFollower" instance=ExtResource("16_i7wq0")]
+[node name="Timer" parent="Luckes_Body/TimerFollower" instance=ExtResource("15_ejtqg")]
 offset_left = 2.0
 offset_right = 84.0
 
 [node name="Respawnpoint" type="Marker2D" parent="."]
 position = Vector2(125, 115)
 
-[node name="NextLevel2" parent="." instance=ExtResource("14_rp4y1")]
+[node name="NextLevel2" parent="." instance=ExtResource("16_p87ue")]
 position = Vector2(623, 113)
-script = ExtResource("16_3f50i")
+script = ExtResource("17_5681s")
 
-[node name="NextLevel3" parent="." instance=ExtResource("14_rp4y1")]
+[node name="NextLevelskip" parent="." instance=ExtResource("16_p87ue")]
 position = Vector2(-142, -14)
-script = ExtResource("16_3f50i")
+script = ExtResource("17_5681s")
 
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]
