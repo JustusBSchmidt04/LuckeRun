@@ -1,6 +1,6 @@
 [gd_scene load_steps=32 format=4 uid="uid://7mffy5d5o5i5"]
 
-[ext_resource type="Script" uid="uid://dpu1qebxpyvjk" path="res://Szene/World1/World1.tres.gd" id="1_sh4o7"]
+[ext_resource type="Script" uid="uid://bae0tlb0cko1b" path="res://Szene/World1/world_1.gd" id="1_3f50i"]
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_i7wq0"]
 [ext_resource type="Texture2D" uid="uid://coi1kp14qvs54" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0002.png" id="5_c6rm1"]
 [ext_resource type="Texture2D" uid="uid://crt7npjnegeu2" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0008.png" id="5_x3jrd"]
@@ -100,7 +100,7 @@ sources/3 = SubResource("TileSetAtlasSource_rp4y1")
 
 [node name="World" type="Node2D"]
 position = Vector2(2, 0)
-script = ExtResource("1_sh4o7")
+script = ExtResource("1_3f50i")
 
 [node name="Map" type="Node2D" parent="."]
 position = Vector2(-6, 3)
