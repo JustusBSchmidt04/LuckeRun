@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dntsryq2y3bpt"]
+[gd_scene load_steps=7 format=3 uid="uid://dntsryq2y3bpt"]
 
 [ext_resource type="Script" uid="uid://c45ge52lawrh5" path="res://Assets/Charakters/Player/Player.gd" id="1_0au72"]
 [ext_resource type="Texture2D" uid="uid://dq6h458odrn2a" path="res://Assets/Charakters/Player/oldluckest.png" id="2_xrltb"]
 [ext_resource type="Texture2D" uid="uid://ctunefbffex82" path="res://Assets/Charakters/Player/oldluckehigh.png" id="3_n4r6y"]
+[ext_resource type="Texture2D" uid="uid://dnen4vj80n088" path="res://Assets/Charakters/Player/oldluckestbein2.png" id="4_t1l2b"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hm0fy"]
 animations = [{
@@ -23,7 +24,10 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 30.0,
+"texture": ExtResource("4_t1l2b")
+}, {
+"duration": 30.0,
 "texture": ExtResource("2_xrltb")
 }],
 "loop": true,
@@ -41,6 +45,7 @@ script = ExtResource("1_0au72")
 position = Vector2(4.5, 0.229358)
 scale = Vector2(0.343137, 0.352337)
 sprite_frames = SubResource("SpriteFrames_hm0fy")
+animation = &"walk"
 speed_scale = 50.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
