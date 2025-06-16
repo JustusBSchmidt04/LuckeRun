@@ -28,6 +28,10 @@ func _physics_process(delta):
 	velocity.y += gravity * delta
 	
 	velocity.x = 0
+	
+	if Input.is_action_pressed("Respawn"):
+		respawn()
+	
 	if Input.is_action_pressed("left"):
 		velocity.x = -speed
 		$AnimatedSprite2D.flip_h = false
