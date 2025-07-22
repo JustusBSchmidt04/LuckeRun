@@ -4,10 +4,11 @@ extends CharacterBody2D
 @export var spawn_point: Marker2D
 @export var tilemap: TileMapLayer
 @export var death: String = "Death"
+@export var tilejump: TileMapLayer
 
 @export var gravity: float = 700
 @export var speed: float = 80
-const jump_force = -270
+var jump_force = -270
 
 var was_in_air = false  # Tracks if in air
 
@@ -20,6 +21,10 @@ func _ready():
 		push_error("spawn_point nicht gefunden")
 	if tilemap == null:
 		push_error("tilemap nicht gefunden")
+	if tilejump == null: 
+		tilejump = get_node_or_null("/root/World/Map/jumping")
+	if tilejump == null:
+		push_error("TileJump nicht gefunden")
 
 func _physics_process(delta):
 	if tilemap == null:
@@ -81,6 +86,14 @@ func _physics_process(delta):
 	if tile_it != -1:
 		push_error("HIER")
 		respawn()
+	
+	var used_cells2 = tilejump.get_used_cells()
+	for cell2 in used_cells2:
+		if tilejump.map_to_local(cell2).distance_to(global_position) < 8:
+			jump_force = -540
+			push_error("Test")
+		else:
+			jump_force = -270
 
 func respawn():
 	global_position = spawn_point.global_position
