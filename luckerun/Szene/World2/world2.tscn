@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://blejnwm608df"]
+[gd_scene load_steps=35 format=4 uid="uid://blejnwm608df"]
 
 [ext_resource type="Script" uid="uid://dpu1qebxpyvjk" path="res://Szene/World1/World1.tres.gd" id="1_tkh7k"]
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_ys6ev"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="15_xow3v"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Szene/timer.tscn" id="16_lgibi"]
 [ext_resource type="Script" uid="uid://b2n3xlx6qc84g" path="res://Szene/SzenenWechsel/next_level_3.gd" id="16_ys6ev"]
+[ext_resource type="PackedScene" uid="uid://ctdoyw8s2g6ld" path="res://Szene/World2/Eisz.tscn" id="20_aimu1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3f50i"]
 texture = ExtResource("2_ys6ev")
@@ -147,6 +148,8 @@ script = ExtResource("16_ys6ev")
 position = Vector2(1442, 315)
 script = ExtResource("16_ys6ev")
 
+[node name="CharacterBody2D" parent="." instance=ExtResource("20_aimu1")]
+position = Vector2(253, 44)
+
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]
-[connection signal="child_entered_tree" from="Luckes_Body" to="." method="_on_luckes_body_child_entered_tree"]

@@ -60,3 +60,9 @@ position_smoothing_enabled = true
 drag_horizontal_enabled = true
 drag_top_margin = 0.0
 drag_bottom_margin = 0.0
+
+[node name="Verzweiflung" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Verzweiflung"]
+position = Vector2(4.5, 3)
+shape = SubResource("RectangleShape2D_grwui")

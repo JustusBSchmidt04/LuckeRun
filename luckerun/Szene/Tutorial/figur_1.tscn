@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dndij0e65b0hs"]
 
-[ext_resource type="Script" uid="uid://5eg5vv44cb8n" path="res://Figur1.gd" id="1_kpai2"]
+[ext_resource type="Script" uid="uid://5eg5vv44cb8n" path="res://Szene/Tutorial/Figur1.gd" id="1_kpai2"]
 [ext_resource type="Texture2D" uid="uid://cvihcjrmouwvb" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Characters/tile_0015.png" id="2_7o1gr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uujtu"]
