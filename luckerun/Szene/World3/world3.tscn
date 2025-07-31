@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=4 uid="uid://dyasaxthgybd"]
+[gd_scene load_steps=50 format=4 uid="uid://dyasaxthgybd"]
 
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_75hha"]
 [ext_resource type="Texture2D" uid="uid://coi1kp14qvs54" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0002.png" id="3_kvs7f"]
@@ -17,12 +17,12 @@
 [ext_resource type="Texture2D" uid="uid://deufot7c1d80p" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0014.png" id="11_ytunc"]
 [ext_resource type="Texture2D" uid="uid://bryfdpcpbnkii" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0004.png" id="12_5v5a0"]
 [ext_resource type="Texture2D" uid="uid://j0yn4oqfta4p" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0007.png" id="12_t27lr"]
-[ext_resource type="Script" uid="uid://jjpixvy4ke38" path="res://Szene/World1/death.gd" id="13_vs2ue"]
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="14_x0bhd"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="15_mjdkx"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Szene/timer.tscn" id="16_2rynv"]
 [ext_resource type="Texture2D" uid="uid://bqy4wj1psvgha" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0012.png" id="17_w03jg"]
 [ext_resource type="Texture2D" uid="uid://bf12bqcro0b6e" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0013.png" id="18_x1fsl"]
+[ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://deathcounter.tscn" id="22_yrftf"]
 [ext_resource type="Script" uid="uid://dkbn370cwjk3p" path="res://Szene/SzenenWechsel/next_level_4.gd" id="25_ougdi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3f50i"]
@@ -169,6 +169,10 @@ custom_data_layer_0/type = 0
 sources/0 = SubResource("TileSetAtlasSource_5pxhd")
 sources/3 = SubResource("TileSetAtlasSource_rp4y1")
 
+[sub_resource type="GDScript" id="GDScript_t5cpm"]
+script/source = "extends TileMapLayer
+"
+
 [node name="World" type="Node2D"]
 position = Vector2(2, 0)
 
@@ -187,7 +191,7 @@ tile_set = SubResource("TileSet_ub2ox")
 [node name="Death" type="TileMapLayer" parent="Map"]
 tile_map_data = PackedByteArray("AAD0/yYAAAAAAAAAAAD1/yYAAAAAAAAAAAD2/yYAAAAAAAAAAAD3/yYAAAAAAAAAAAD4/yYAAAAAAAAAAAD5/yYAAAAAAAAAAAD6/yYAAAAAAAAAAAD7/yYAAAAAAAAAAAD8/yYAAAAAAAAAAAD9/yYAAAAAAAAAAAD+/yYAAAAAAAAAAAD//yYAAAAAAAAAAAAAACYAAAAAAAAAAAABACYAAAAAAAAAAAACACYAAAAAAAAAAAADACYAAAAAAAAAAAAEACYAAAAAAAAAAAAFACYAAAAAAAAAAAAGACYAAAAAAAAAAAAHACYAAAAAAAAAAAAIACYAAAAAAAAAAAAJACYAAAAAAAAAAAAKACYAAAAAAAAAAAALACYAAAAAAAAAAAAMACYAAAAAAAAAAAANACYAAAAAAAAAAAAOACYAAAAAAAAAAAAPACYAAAAAAAAAAAAQACYAAAAAAAAAAAARACYAAAAAAAAAAAASACYAAAAAAAAAAAATACYAAAAAAAAAAAAUACYAAAAAAAAAAAAVACYAAAAAAAAAAAAWACYAAAAAAAAAAAAXACYAAAAAAAAAAAAYACYAAAAAAAAAAAAZACYAAAAAAAAAAAAaACYAAAAAAAAAAAAbACYAAAAAAAAAAAAcACYAAAAAAAAAAAAdACYAAAAAAAAAAAAeACYAAAAAAAAAAAAfACYAAAAAAAAAAAAgACYAAAAAAAAAAAAhACYAAAAAAAAAAAAiACYAAAAAAAAAAAAjACYAAAAAAAAAAAAkACYAAAAAAAAAAAAlACYAAAAAAAAAAAAmACYAAAAAAAAAAAAnACYAAAAAAAAAAAAoACYAAAAAAAAAAAApACYAAAAAAAAAAAAqACYAAAAAAAAAAAArACYAAAAAAAAAAAAsACYAAAAAAAAAAAAtACYAAAAAAAAAAAAuACYAAAAAAAAAAAAvACYAAAAAAAAAAAAwACYAAAAAAAAAAAAxACYAAAAAAAAAAAAyACYAAAAAAAAAAAAzACYAAAAAAAAAAAA0ACYAAAAAAAAAAAA1ACYAAAAAAAAAAAA2ACYAAAAAAAAAAAA3ACYAAAAAAAAAAAA4ACYAAAAAAAAAAAA5ACYAAAAAAAAAAAA6ACYAAAAAAAAAAAA7ACYAAAAAAAAAAAA8ACYAAAAAAAAAAAA9ACYAAAAAAAAAAAA+ACYAAAAAAAAAAAA/ACYAAAAAAAAAAABAACYAAAAAAAAAAABBACYAAAAAAAAAAABCACYAAAAAAAAAAABDACYAAAAAAAAAAABEACYAAAAAAAAAAABFACYAAAAAAAAAAABGACYAAAAAAAAAAABHACYAAAAAAAAAAABIACYAAAAAAAAAAABJACYAAAAAAAAAAABKACYAAAAAAAAAAABLACYAAAAAAAAAAABMACYAAAAAAAAAAABNACYAAAAAAAAAAABOACYAAAAAAAAAAABPACYAAAAAAAAAAABQACYAAAAAAAAAAABRACYAAAAAAAAAAABSACYAAAAAAAAAAABTACYAAAAAAAAAAABUACYAAAAAAAAAAABVACYAAAAAAAAAAABWACYAAAAAAAAAAABXACYAAAAAAAAAAABYACYAAAAAAAAAAABZACYAAAAAAAAAAABaACYAAAAAAAAAAABbACYAAAAAAAAAAABcACYAAAAAAAAAAABdACYAAAAAAAAAAABeACYAAAAAAAAAAABfACYAAAAAAAAAAABgACYAAAAAAAAAAABhACYAAAAAAAAAAABiACYAAAAAAAAAAABjACYAAAAAAAAAAABkACYAAAAAAAAAAABlACYAAAAAAAAAAABmACYAAAAAAAAAAABnACYAAAAAAAAAAABoACYAAAAAAAAAAABpACYAAAAAAAAAAABqACYAAAAAAAAAAABrACYAAAAAAAAAAABsACYAAAAAAAAAAABtACYAAAAAAAAAAABuACYAAAAAAAAAAABvACYAAAAAAAAAAADz/yYAAAAAAAAAAADy/yYAAAAAAAAAAADx/yYAAAAAAAAAAADw/yYAAAAAAAAAAADv/yYAAAAAAAAAAADu/yYAAAAAAAAAAADt/yYAAAAAAAAAAADs/yYAAAAAAAAAAADr/yYAAAAAAAAAAADq/yYAAAAAAAAAAADp/yYAAAAAAAAAAADo/yYAAAAAAAAAAADn/yYAAAAAAAAAAADm/yYAAAAAAAAAAADl/yYAAAAAAAAAAADk/yYAAAAAAAAAAADj/yYAAAAAAAAAAADi/yYAAAAAAAAAAADh/yYAAAAAAAAAAADg/yYAAAAAAAAAAADf/yYAAAAAAAAAAADe/yYAAAAAAAAAAADd/yYAAAAAAAAAAABwACYAAAAAAAAAAABxACYAAAAAAAAAAAByACYAAAAAAAAAAABzACYAAAAAAAAAAAB0ACYAAAAAAAAAAAB1ACYAAAAAAAAAAAB2ACYAAAAAAAAAAAB3ACYAAAAAAAAAAAB4ACYAAAAAAAAAAAB5ACYAAAAAAAAAAAB6ACYAAAAAAAAAAAB7ACYAAAAAAAAAAAB8ACYAAAAAAAAAAAB9ACYAAAAAAAAAAAB+ACYAAAAAAAAAAAB/ACYAAAAAAAAAAACAACYAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_ysu5b")
-script = ExtResource("13_vs2ue")
+script = SubResource("GDScript_t5cpm")
 
 [node name="Luckes_Body" parent="." instance=ExtResource("14_x0bhd")]
 position = Vector2(124, 122)
@@ -197,6 +201,8 @@ position = Vector2(124, 122)
 [node name="Timer" parent="Luckes_Body/TimerFollower" instance=ExtResource("16_2rynv")]
 offset_left = 2.0
 offset_right = 84.0
+
+[node name="Deathcounter" parent="Luckes_Body/TimerFollower" instance=ExtResource("22_yrftf")]
 
 [node name="Respawnpoint" type="Marker2D" parent="."]
 position = Vector2(125, 115)

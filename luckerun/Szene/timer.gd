@@ -1,9 +1,5 @@
 extends Panel
 
-func _ready():
-	# No reset/start here — only displaying!
-	pass
-
 func _process(delta):
 	var time = GlobalTimer.get_time()
 

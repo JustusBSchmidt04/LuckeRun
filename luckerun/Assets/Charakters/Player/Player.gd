@@ -8,6 +8,8 @@ extends CharacterBody2D
 @export var gravity: float = 700
 @export var speed: float = 80
 var jump_force = -270
+var deathcounter: int = 0
+var respawn_cd := true
 
 var was_in_air = false  # Tracks if in air
 
@@ -20,6 +22,7 @@ func _ready():
 		push_error("spawn_point nicht gefunden")
 	if tilemap == null:
 		push_error("tilemap nicht gefunden")
+	$TimerFollower/Deathcounter/Label.text = "Deaths: %d" % deathcounter
 
 func _physics_process(delta):
 	if tilemap == null:
@@ -83,6 +86,14 @@ func _physics_process(delta):
 		respawn()
 
 func respawn():
+	if not respawn_cd:
+		return
+	deathcounter += 1
+	print(deathcounter)
 	global_position = spawn_point.global_position
 	velocity = Vector2.ZERO
 	push_error("DEFUCK")
+	$TimerFollower/Deathcounter/Label.text = "Deaths: %d" % deathcounter
+	respawn_cd = false
+	await get_tree().create_timer(1.0).timeout
+	respawn_cd = true
