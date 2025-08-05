@@ -3,3 +3,4 @@ func _ready():
 	
 	GlobalTimer.reset()
 	GlobalTimer.start()
+	

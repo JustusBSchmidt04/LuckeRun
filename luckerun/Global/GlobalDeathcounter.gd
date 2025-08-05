@@ -2,7 +2,9 @@
 extends Node
 
 var deaths: int = 0
-const SAVE_PATH := "user://progress.save"
+const SAVE_PATH := "user://death.save"
+
+
 
 func _ready():
 	load_progress()
