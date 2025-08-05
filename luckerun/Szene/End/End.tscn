@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://l6g57qj6s2v8" path="res://Assets/RestAssets/CatRose.jpg" id="1_kjlux"]
 [ext_resource type="Script" uid="uid://bdl8nu5510v12" path="res://Szene/End/quit_button.gd" id="2_gketx"]
 [ext_resource type="AudioStream" uid="uid://dyj2spy4bvbfp" path="res://Sounds/WinConfettiSound.mp3" id="3_nbpin"]
-[ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Szene/timer.tscn" id="5_s07lu"]
-[ext_resource type="Script" uid="uid://ctvlndmkbipq4" path="res://Szene/timerend.gd" id="6_s07lu"]
+[ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="5_s07lu"]
+[ext_resource type="Script" uid="uid://ctvlndmkbipq4" path="res://Global/timerend.gd" id="6_s07lu"]
 
 [sub_resource type="Theme" id="Theme_kjlux"]
 

@@ -11,9 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://gj3ntwwiitpp" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0000.png" id="9_ht2tq"]
 [ext_resource type="Texture2D" uid="uid://t5gxqqt3x5nw" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0020.png" id="10_htq2q"]
 [ext_resource type="Texture2D" uid="uid://bryfdpcpbnkii" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0004.png" id="11_45t6x"]
-[ext_resource type="Script" uid="uid://jjpixvy4ke38" path="res://Szene/World1/death.gd" id="12_fvcy4"]
+[ext_resource type="Script" path="res://Szene/World1/death.gd" id="12_fvcy4"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="13_oo0ul"]
-[ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Szene/timer.tscn" id="14_bth8w"]
+[ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="14_bth8w"]
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="15_wsdfk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3f50i"]

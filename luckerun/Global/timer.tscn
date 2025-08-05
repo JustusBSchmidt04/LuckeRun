@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bftpaaxqf7k8n"]
 
-[ext_resource type="Script" uid="uid://bj35d7hsqgn1w" path="res://Szene/timer.gd" id="1_uaqo8"]
+[ext_resource type="Script" uid="uid://bj35d7hsqgn1w" path="res://Global/timer.gd" id="1_uaqo8"]
 
 [node name="Timer" type="Panel"]
 offset_right = 82.0

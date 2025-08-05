@@ -18,7 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 MusicPlayer="*res://Sounds/MusicPlayer.tscn"
-GlobalTimer="*res://Szene/GlobalTimer.gd"
+GlobalTimer="*res://Global/GlobalTimer.gd"
+GlobalDeathcounter="*res://Global/GlobalDeathcounter.gd"
 
 [display]
 

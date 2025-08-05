@@ -20,8 +20,8 @@
 [ext_resource type="Texture2D" uid="uid://gj3ntwwiitpp" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0000.png" id="19_le65a"]
 [ext_resource type="Texture2D" uid="uid://t5gxqqt3x5nw" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0020.png" id="20_crpib"]
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="22_q80d0"]
-[ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://deathcounter.tscn" id="22_ykpdr"]
-[ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Szene/timer.tscn" id="23_ii6u2"]
+[ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="22_ykpdr"]
+[ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="23_ii6u2"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="24_suico"]
 [ext_resource type="Script" uid="uid://dvxrvsk2ccn8o" path="res://Szene/SzenenWechsel/next_level_5.gd" id="26_w5jn1"]
 
