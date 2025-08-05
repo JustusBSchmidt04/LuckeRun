@@ -6,6 +6,8 @@ func _ready():
 	$OptionsButton.pressed.connect(_on_options_button_pressed)
 	$QuitButton.pressed.connect(_on_quit_button_pressed)
 	$PlayButton.pressed.connect(_on_start_button_pressed)
+	GlobalDeathcounter.deaths = 0
+	GlobalDeathcounter.save_progress()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 

@@ -32,6 +32,15 @@ position = Vector2(512, 301.5)
 scale = Vector2(1.06146, 0.622524)
 texture = ExtResource("1_kjlux")
 
+[node name="TextEdit2" type="TextEdit" parent="CatRose"]
+top_level = true
+offset_left = 208.0
+offset_top = 512.0
+offset_right = 478.0
+offset_bottom = 597.0
+theme_override_font_sizes/font_size = 50
+text = "Your Time:"
+
 [node name="QuitButton" type="Button" parent="." node_paths=PackedStringArray("shortcut_context")]
 offset_left = 863.0
 offset_top = 530.0
@@ -86,9 +95,9 @@ horizontal_alignment = 2
 
 [node name="TextEdit2" type="TextEdit" parent="."]
 top_level = true
-offset_left = 208.0
-offset_top = 512.0
-offset_right = 478.0
-offset_bottom = 597.0
+offset_left = 206.0
+offset_top = 413.0
+offset_right = 476.0
+offset_bottom = 498.0
 theme_override_font_sizes/font_size = 50
-text = "Your Time:"
+text = "Deaths:"
