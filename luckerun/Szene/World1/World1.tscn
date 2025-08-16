@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=4 uid="uid://7mffy5d5o5i5"]
+[gd_scene load_steps=52 format=4 uid="uid://7mffy5d5o5i5"]
 
 [ext_resource type="Script" uid="uid://bae0tlb0cko1b" path="res://Szene/World1/world_1.gd" id="1_u16ad"]
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_o810c"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://bqy4wj1psvgha" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0012.png" id="17_uhtif"]
 [ext_resource type="Texture2D" uid="uid://bf12bqcro0b6e" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0013.png" id="18_bu4ca"]
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="23_ub2ox"]
+[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://pause_menu.tscn" id="24_5pxhd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3f50i"]
 texture = ExtResource("2_o810c")
@@ -205,6 +206,9 @@ offset_left = 2.0
 offset_right = 84.0
 
 [node name="Deathcounter" parent="Luckes_Body/TimerFollower" instance=ExtResource("23_ub2ox")]
+
+[node name="PauseMenu" parent="Luckes_Body" instance=ExtResource("24_5pxhd")]
+visible = false
 
 [node name="Respawnpoint" type="Marker2D" parent="."]
 position = Vector2(125, 115)

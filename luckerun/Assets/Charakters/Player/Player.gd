@@ -4,11 +4,13 @@ extends CharacterBody2D
 @export var spawn_point: Marker2D
 @export var tilemap: TileMapLayer
 @export var death: String = "Death"
+@onready var PauseMenu = $PauseMenu
 
 @export var gravity: float = 700
 @export var speed: float = 80
 var jump_force := -270
 var respawn_cd := true
+var paused = false
 
 var was_in_air := false  # Tracks if in air
 
@@ -28,6 +30,11 @@ func _ready():
 func _physics_process(delta):
 	if tilemap == null:
 		return
+
+	#Pausbutton
+	if Input.is_action_just_pressed("pause"):
+		push_error("Paus")
+		pauseMenu()
 
 	# Physik
 	velocity.y += gravity * delta
@@ -106,3 +113,12 @@ func respawn():
 	respawn_cd = false
 	await get_tree().create_timer(1.0).timeout
 	respawn_cd = true
+
+func pauseMenu():
+	if paused:
+		PauseMenu.hide()
+		Engine.time_scale = 1
+	else:
+		PauseMenu.show()
+		Engine.time_scale = 0
+	paused = !paused

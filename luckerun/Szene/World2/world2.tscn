@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://blejnwm608df"]
+[gd_scene load_steps=35 format=4 uid="uid://blejnwm608df"]
 
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_ys6ev"]
 [ext_resource type="Texture2D" uid="uid://coi1kp14qvs54" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0002.png" id="3_n6px6"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="14_n6tp4"]
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="15_ovqvm"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="15_xow3v"]
+[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://pause_menu.tscn" id="16_a1efi"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="16_lgibi"]
 [ext_resource type="Script" uid="uid://b2n3xlx6qc84g" path="res://Szene/SzenenWechsel/next_level_3.gd" id="16_ys6ev"]
 [ext_resource type="PackedScene" uid="uid://ctdoyw8s2g6ld" path="res://Szene/World2/Eisz.tscn" id="20_aimu1"]
@@ -135,6 +136,9 @@ offset_left = 2.0
 offset_right = 84.0
 
 [node name="Deathcounter" parent="Luckes_Body/TimerFollower" instance=ExtResource("15_ovqvm")]
+
+[node name="PauseMenu" parent="Luckes_Body" instance=ExtResource("16_a1efi")]
+visible = false
 
 [node name="Respawnpoint" type="Marker2D" parent="."]
 position = Vector2(125, 115)
