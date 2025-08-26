@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var spawn_point: Marker2D
 @export var tilemap: TileMapLayer
 @export var death: String = "Death"
-@onready var PauseMenu = $PauseMenu
+@onready var PauseMenu = $TimerFollower/PauseMenu
 
 @export var gravity: float = 700
 @export var speed: float = 80

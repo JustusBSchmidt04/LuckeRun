@@ -208,12 +208,12 @@ offset_right = 84.0
 
 [node name="Deathcounter" parent="Luckes_Body/TimerFollower" instance=ExtResource("23_6xejw")]
 
-[node name="PauseMenu" parent="Luckes_Body" instance=ExtResource("27_ccohw")]
+[node name="PauseMenu" parent="Luckes_Body/TimerFollower" instance=ExtResource("27_ccohw")]
 visible = false
-offset_left = -285.0
-offset_top = -411.0
-offset_right = 230.0
-offset_bottom = -61.0
+offset_left = 51.0
+offset_top = 26.0
+offset_right = 566.0
+offset_bottom = 376.0
 
 [node name="Respawnpoint" type="Marker2D" parent="."]
 position = Vector2(125, 482)
