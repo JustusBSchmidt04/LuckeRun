@@ -7,12 +7,8 @@ func _physics_process(delta):
 	else:
 		$Text.visible = true
 
-func _ready():
-	Detected = 0
-
 func _on_detection_area_body_entered(body: Node2D) -> void:
 	Detected = 1
-
 
 func _on_detection_area_body_exited(body: Node2D) -> void:
 	Detected = 0
