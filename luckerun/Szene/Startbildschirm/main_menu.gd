@@ -16,7 +16,7 @@ func _ready():
 
 	
 func _on_start_button_pressed():
-	get_tree().change_scene_to_file("res://Szene/World1/World1.tscn")
+	get_tree().change_scene_to_file("res://Szene/Tutorial/worldtu.tscn")
 
 	
 

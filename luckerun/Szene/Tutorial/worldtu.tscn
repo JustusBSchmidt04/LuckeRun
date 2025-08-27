@@ -220,7 +220,6 @@ position = Vector2(125, 482)
 
 [node name="NextLevel2" parent="." instance=ExtResource("24_evqb7")]
 position = Vector2(816, 310)
-script = ExtResource("25_i1hnt")
 
 [node name="NextLevelskip" parent="." instance=ExtResource("24_evqb7")]
 position = Vector2(-142, -14)

@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://b3b1mew6doj57"]
 
-[ext_resource type="Script" uid="uid://drcho63gxex87" path="res://highscore_screen.gd" id="1_0jogh"]
+[ext_resource type="Script" uid="uid://drcho63gxex87" path="res://Szene/End/highscore_screen.gd" id="1_7alww"]
 
 [node name="Highscore" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_0jogh")
+script = ExtResource("1_7alww")
 
 [node name="Hintergrund" type="Panel" parent="."]
 layout_mode = 0
@@ -14,8 +14,10 @@ offset_bottom = 608.0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Hintergrund"]
 layout_mode = 0
-offset_right = 1021.0
-offset_bottom = 594.0
+offset_left = 349.0
+offset_top = 157.0
+offset_right = 808.0
+offset_bottom = 526.0
 
 [node name="HighscoreListe" type="VBoxContainer" parent="Hintergrund/ScrollContainer"]
 layout_mode = 2
