@@ -21,6 +21,7 @@ MusicPlayer="*res://Sounds/MusicPlayer.tscn"
 GlobalTimer="*res://Global/GlobalTimer.gd"
 GlobalDeathcounter="*res://Global/GlobalDeathcounter.gd"
 GlobalHighscore="*res://Global/GlobalHighscore.gd"
+HighscoreScreen="*res://highscore_screen.gd"
 
 [display]
 
