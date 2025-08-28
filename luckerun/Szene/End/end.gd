@@ -10,7 +10,7 @@ func _ready():
 	GlobalTimer.stop()
 	GlobalTimer.save_progress()
 	GlobalDeathcounter.save_progress()
-	$RichTextLabel.text = "%d" % GlobalDeathcounter.deaths
+	$DeathCount.text = "%d" % GlobalDeathcounter.deaths
 	end_game()
 	GlobalDeathcounter.deaths = 0
 	#GlobalHighscore.clear_highscores()  #LÖSCHT HIGHSCORES
