@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ckrhpmh7oj700"]
+[gd_scene load_steps=11 format=3 uid="uid://ckrhpmh7oj700"]
 
 [ext_resource type="Script" uid="uid://bayyj3q14lr0e" path="res://Szene/End/end.gd" id="1_ht761"]
 [ext_resource type="Texture2D" uid="uid://l6g57qj6s2v8" path="res://Assets/RestAssets/CatRose.jpg" id="1_kjlux"]
@@ -6,7 +6,6 @@
 [ext_resource type="AudioStream" uid="uid://dyj2spy4bvbfp" path="res://Sounds/WinConfettiSound.mp3" id="3_nbpin"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="5_s07lu"]
 [ext_resource type="Script" uid="uid://ctvlndmkbipq4" path="res://Global/timerend.gd" id="6_s07lu"]
-[ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="7_cnq0f"]
 [ext_resource type="Script" uid="uid://do8nc1o0xgrat" path="res://Szene/End/hs_button.gd" id="8_nefj8"]
 
 [sub_resource type="Theme" id="Theme_kjlux"]
@@ -103,12 +102,6 @@ offset_right = 476.0
 offset_bottom = 498.0
 theme_override_font_sizes/font_size = 50
 text = "Deaths:"
-
-[node name="Deathcounter" parent="." instance=ExtResource("7_cnq0f")]
-offset_left = 565.0
-offset_top = 447.0
-offset_right = 655.0
-offset_bottom = 479.0
 
 [node name="HSButton" type="Button" parent="."]
 offset_left = 861.0

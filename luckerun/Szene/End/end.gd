@@ -4,6 +4,7 @@ func _ready():
 	GlobalTimer.stop()
 	GlobalTimer.save_progress()
 	GlobalDeathcounter.save_progress()
+	$TextEdit2.text = "Deaths: %d" % GlobalDeathcounter.deaths
 	end_game()
 	#GlobalHighscore.clear_highscores()  #LÖSCHT HIGHSCORES
 
