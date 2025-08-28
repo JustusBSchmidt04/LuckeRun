@@ -13,7 +13,7 @@ func _on_quit_pressed() -> void:
 
 func _ready():
 	$Panel/VBoxContainer/BackToMain.pressed.connect(_on_BackToMain_button_pressed)
-	GlobalDeathcounter.deaths = 0
+	
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -24,3 +24,4 @@ func _ready():
 	
 func _on_BackToMain_button_pressed():
 	get_tree().change_scene_to_file("res://Szene/Startbildschirm/main_menu_bg.tscn")
+	GlobalDeathcounter.deaths = 0
