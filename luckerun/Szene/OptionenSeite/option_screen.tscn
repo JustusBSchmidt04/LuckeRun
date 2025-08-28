@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2delqx8bidb6"]
+[gd_scene load_steps=5 format=3 uid="uid://c2delqx8bidb6"]
 
 [ext_resource type="Script" uid="uid://b5rox54tye43o" path="res://Global/control.gd" id="1_klhi8"]
+[ext_resource type="PackedScene" uid="uid://baiulecik0fib" path="res://volume_slider.tscn" id="2_cd271"]
 
 [sub_resource type="Theme" id="Theme_v464q"]
 
@@ -29,24 +30,12 @@ theme_override_font_sizes/font_size = 25
 action_mode = 0
 text = "Back"
 
-[node name="VolumeSlider" type="HSlider" parent="Control"]
-layout_mode = 2
-offset_left = 439.0
-offset_top = 144.0
-offset_right = 614.0
-offset_bottom = 189.0
-tooltip_text = "Change Volume"
-min_value = -30.0
-max_value = 0.0
-step = 0.1
-
-[node name="TextEdit" type="TextEdit" parent="Control/VolumeSlider"]
+[node name="VolumeSlider" parent="Control" instance=ExtResource("2_cd271")]
 layout_mode = 0
-offset_left = -15.0
-offset_top = 52.0
-offset_right = 188.0
-offset_bottom = 93.0
-text = "        Change Volume"
+offset_left = 0.0
+offset_top = 188.0
+offset_right = 175.0
+offset_bottom = 233.0
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = SubResource("AudioStream_1deg5")

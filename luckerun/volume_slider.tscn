@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://baiulecik0fib"]
+
+[node name="VolumeSlider" type="HSlider"]
+offset_left = 439.0
+offset_top = 144.0
+offset_right = 614.0
+offset_bottom = 189.0
+tooltip_text = "Change Volume"
+min_value = -30.0
+max_value = 0.0
+step = 0.1
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 52.0
+offset_right = 188.0
+offset_bottom = 93.0
+text = "        Change Volume"
