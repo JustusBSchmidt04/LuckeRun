@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3b1mew6doj57"]
+[gd_scene load_steps=4 format=3 uid="uid://b3b1mew6doj57"]
 
 [ext_resource type="Script" uid="uid://drcho63gxex87" path="res://Szene/End/highscore_screen.gd" id="1_7alww"]
+[ext_resource type="Script" uid="uid://bdl8nu5510v12" path="res://Szene/End/quit_button.gd" id="2_nh0mg"]
+
+[sub_resource type="Theme" id="Theme_hs4qb"]
 
 [node name="Highscore" type="Control"]
 layout_mode = 3
@@ -21,3 +24,17 @@ offset_bottom = 526.0
 
 [node name="HighscoreListe" type="VBoxContainer" parent="Hintergrund/ScrollContainer"]
 layout_mode = 2
+
+[node name="QuitButton" type="Button" parent="." node_paths=PackedStringArray("shortcut_context")]
+offset_left = 363.0
+offset_top = 501.0
+offset_right = 572.0
+offset_bottom = 583.0
+tooltip_text = "Close the Game"
+shortcut_context = NodePath(".")
+theme = SubResource("Theme_hs4qb")
+theme_override_colors/font_hover_color = Color(0.501961, 0.729412, 0.141176, 1)
+theme_override_font_sizes/font_size = 25
+action_mode = 0
+text = "Quit"
+script = ExtResource("2_nh0mg")

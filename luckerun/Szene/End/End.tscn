@@ -78,8 +78,8 @@ text = "Highscore"
 script = ExtResource("8_nefj8")
 
 [node name="Endscreen" type="Sprite2D" parent="."]
-position = Vector2(509, 306)
-scale = Vector2(0.809713, 0.727381)
+position = Vector2(512.25, 303.75)
+scale = Vector2(0.814889, 0.732738)
 texture = ExtResource("7_cnq0f")
 
 [node name="TimerEnd" parent="Endscreen" instance=ExtResource("5_s07lu")]
