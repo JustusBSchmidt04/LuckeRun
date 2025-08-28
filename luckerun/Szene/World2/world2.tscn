@@ -155,7 +155,7 @@ script = ExtResource("16_ys6ev")
 position = Vector2(1442, 315)
 script = ExtResource("16_ys6ev")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("20_aimu1")]
+[node name="Eiszapfen" parent="." instance=ExtResource("20_aimu1")]
 position = Vector2(253, 44)
 
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
