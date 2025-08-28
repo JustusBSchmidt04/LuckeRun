@@ -12,6 +12,7 @@
 [sub_resource type="Theme" id="Theme_kjlux"]
 
 [sub_resource type="Theme" id="Theme_ht761"]
+default_font_size = 20
 
 [sub_resource type="Theme" id="Theme_s07lu"]
 
@@ -51,39 +52,6 @@ stream = ExtResource("3_nbpin")
 volume_db = -13.215
 autoplay = true
 
-[node name="TimerEnd" parent="." instance=ExtResource("5_s07lu")]
-offset_left = 650.0
-offset_top = 762.0
-offset_right = 914.0
-offset_bottom = 836.0
-theme = SubResource("Theme_ht761")
-script = ExtResource("6_s07lu")
-
-[node name="MiSec2" type="Label" parent="TimerEnd"]
-layout_mode = 0
-offset_left = 152.0
-offset_right = 213.0
-offset_bottom = 80.0
-theme_override_font_sizes/font_size = 50
-horizontal_alignment = 2
-
-[node name="Sec2" type="Label" parent="TimerEnd"]
-layout_mode = 0
-offset_left = 80.0
-offset_right = 144.0
-offset_bottom = 80.0
-theme = SubResource("Theme_s07lu")
-theme_override_font_sizes/font_size = 50
-horizontal_alignment = 2
-
-[node name="Min2" type="Label" parent="TimerEnd"]
-layout_mode = 0
-offset_left = 8.0
-offset_right = 72.0
-offset_bottom = 80.0
-theme_override_font_sizes/font_size = 50
-horizontal_alignment = 2
-
 [node name="Deaths" type="TextEdit" parent="."]
 visible = false
 top_level = true
@@ -105,6 +73,45 @@ script = ExtResource("8_nefj8")
 position = Vector2(509, 306)
 scale = Vector2(0.809713, 0.727381)
 texture = ExtResource("7_cnq0f")
+
+[node name="TimerEnd" parent="Endscreen" instance=ExtResource("5_s07lu")]
+show_behind_parent = false
+top_level = true
+use_parent_material = true
+offset_left = 310.0
+offset_top = 228.0
+offset_right = 574.0
+offset_bottom = 302.0
+theme = SubResource("Theme_ht761")
+script = ExtResource("6_s07lu")
+
+[node name="MiSec2" type="Label" parent="Endscreen/TimerEnd"]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 18.0
+offset_right = 111.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 2
+
+[node name="Sec2" type="Label" parent="Endscreen/TimerEnd"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 18.0
+offset_right = 83.0
+offset_bottom = 54.0
+theme = SubResource("Theme_s07lu")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 2
+
+[node name="Min2" type="Label" parent="Endscreen/TimerEnd"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 18.0
+offset_right = 52.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 245.0

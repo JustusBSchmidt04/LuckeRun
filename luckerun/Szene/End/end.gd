@@ -1,6 +1,12 @@
 extends Node2D
 
 func _ready():
+	var style = StyleBoxFlat.new()
+	style.bg_color = Color(0, 0, 0, 0) # komplett durchsichtig
+	$Endscreen/TimerEnd.add_theme_stylebox_override("panel", style)
+
+
+  
 	GlobalTimer.stop()
 	GlobalTimer.save_progress()
 	GlobalDeathcounter.save_progress()
