@@ -216,7 +216,7 @@ offset_right = 566.0
 offset_bottom = 376.0
 
 [node name="Respawnpoint" type="Marker2D" parent="."]
-position = Vector2(125, 482)
+position = Vector2(338, 494)
 
 [node name="NextLevel2" parent="." instance=ExtResource("24_evqb7")]
 position = Vector2(816, 310)

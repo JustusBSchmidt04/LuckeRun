@@ -21,17 +21,17 @@ script = ExtResource("1_ht761")
 
 [node name="DeathCount" type="Label" parent="."]
 top_level = true
-offset_left = 245.0
-offset_top = 290.0
-offset_right = 286.0
-offset_bottom = 318.0
+offset_left = 241.0
+offset_top = 291.0
+offset_right = 282.0
+offset_bottom = 319.0
 theme_override_font_sizes/font_size = 20
 
 [node name="QuitButton" type="Button" parent="." node_paths=PackedStringArray("shortcut_context")]
-offset_left = 622.0
-offset_top = 402.0
-offset_right = 720.0
-offset_bottom = 445.0
+offset_left = 619.0
+offset_top = 403.0
+offset_right = 717.0
+offset_bottom = 446.0
 tooltip_text = "Close the Game"
 shortcut_context = NodePath(".")
 theme = SubResource("Theme_kjlux")
@@ -42,10 +42,10 @@ text = "Quit"
 script = ExtResource("2_gketx")
 
 [node name="RestartButton" type="Button" parent="." node_paths=PackedStringArray("shortcut_context")]
-offset_left = 652.0
-offset_top = 451.0
-offset_right = 752.0
-offset_bottom = 494.0
+offset_left = 654.0
+offset_top = 452.0
+offset_right = 754.0
+offset_bottom = 495.0
 tooltip_text = "Restart the Game"
 shortcut_context = NodePath(".")
 theme = SubResource("Theme_kjlux")
@@ -60,31 +60,24 @@ stream = ExtResource("3_nbpin")
 volume_db = -13.215
 autoplay = true
 
-[node name="Deaths" type="TextEdit" parent="."]
-visible = false
-top_level = true
-offset_left = 249.0
-offset_top = 279.0
-offset_right = 372.0
-offset_bottom = 334.0
-
 [node name="HSButton" type="Button" parent="."]
-offset_left = 374.0
+offset_left = 369.0
 offset_top = 366.0
-offset_right = 469.0
+offset_right = 464.0
 offset_bottom = 405.0
 tooltip_text = "Shows your Highscores"
 text = "Highscore"
 script = ExtResource("8_nefj8")
 
 [node name="Endscreen" type="Sprite2D" parent="."]
-position = Vector2(512.25, 303.75)
-scale = Vector2(0.814889, 0.732738)
+position = Vector2(510.125, 304.875)
+scale = Vector2(0.819865, 0.737798)
 texture = ExtResource("7_cnq0f")
 
 [node name="TimerEnd" parent="Endscreen" instance=ExtResource("5_s07lu")]
 show_behind_parent = false
 top_level = true
+visibility_layer = 3
 use_parent_material = true
 offset_left = 310.0
 offset_top = 228.0
