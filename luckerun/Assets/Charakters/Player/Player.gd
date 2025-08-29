@@ -85,12 +85,10 @@ func _physics_process(delta):
 	for cell in used_cells:
 		if tilemap.map_to_local(cell).distance_to(global_position) < 8:
 			respawn()
-			push_error("DAMNIT")
 
 	var tile_pos: Vector2i = tilemap.local_to_map(global_position)
 	var tile_it = tilemap.get_cell_source_id(tile_pos)
 	if tile_it != -1:
-		push_error("HIER")
 		respawn()
 
 func respawn():
@@ -104,7 +102,6 @@ func respawn():
 	# Reset Position & Bewegung
 	global_position = spawn_point.global_position
 	velocity = Vector2.ZERO
-	push_error("DEFUCK")
 
 	# UI aktualisieren
 	$TimerFollower/Deathcounter/Label.text = "Deaths: %d" % GlobalDeathcounter.deaths
