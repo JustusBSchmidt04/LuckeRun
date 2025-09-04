@@ -11,8 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://bryfdpcpbnkii" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0004.png" id="12_o5jli"]
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="14_ta6tf"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="15_ejtqg"]
+[ext_resource type="Script" uid="uid://dtk5mjb6r736f" path="res://Szene/SzenenWechsel/next_level3.gd" id="15_rp4y1"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="16_p87ue"]
-[ext_resource type="Script" uid="uid://bqqg5i45mpgd3" path="res://Szene/SzenenWechsel/next_level_2.gd" id="17_5681s"]
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="23_ub2ox"]
 [ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://pause_menu.tscn" id="24_5pxhd"]
 
@@ -122,11 +122,11 @@ position = Vector2(125, 115)
 
 [node name="NextLevel" parent="." instance=ExtResource("16_p87ue")]
 position = Vector2(441, 24)
-script = ExtResource("17_5681s")
+script = ExtResource("15_rp4y1")
 
 [node name="NextLevelskip" parent="." instance=ExtResource("16_p87ue")]
 position = Vector2(-142, -14)
-script = ExtResource("17_5681s")
+script = ExtResource("15_rp4y1")
 
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]
