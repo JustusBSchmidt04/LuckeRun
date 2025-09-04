@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3b1mew6doj57"]
+[gd_scene load_steps=5 format=3 uid="uid://b3b1mew6doj57"]
 
 [ext_resource type="Script" uid="uid://drcho63gxex87" path="res://Szene/End/highscore_screen.gd" id="1_7alww"]
 [ext_resource type="Script" uid="uid://bdl8nu5510v12" path="res://Szene/End/quit_button.gd" id="2_nh0mg"]
+[ext_resource type="Texture2D" uid="uid://5u402270fmys" path="res://Assets/Background/Exciting Pixel Art Gaming Wallpaper with Podium.png" id="3_hs4qb"]
 
 [sub_resource type="Theme" id="Theme_hs4qb"]
 
@@ -39,3 +40,18 @@ theme_override_font_sizes/font_size = 25
 action_mode = 0
 text = "Quit"
 script = ExtResource("2_nh0mg")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 21.0
+offset_right = 613.0
+offset_bottom = 107.0
+theme_override_font_sizes/font_size = 50
+text = "Highscores:"
+
+[node name="ExcitingPixelArtGamingWallpaperWithPodium" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(485, 350)
+scale = Vector2(0.563672, 0.642361)
+texture = ExtResource("3_hs4qb")
