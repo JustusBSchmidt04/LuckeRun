@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b74m623ogq64g"]
 
-[ext_resource type="Script" uid="uid://bt2tepy3mv1qf" path="res://pause_menu.gd" id="1_hdmo1"]
-[ext_resource type="PackedScene" uid="uid://baiulecik0fib" path="res://volume_slider.tscn" id="2_nwcfo"]
+[ext_resource type="Script" uid="uid://bt2tepy3mv1qf" path="res://Global/pause_menu.gd" id="1_hdmo1"]
+[ext_resource type="PackedScene" uid="uid://baiulecik0fib" path="res://Sounds/volume_slider.tscn" id="2_nwcfo"]
 
 [sub_resource type="AudioStream" id="AudioStream_nwcfo"]
 

@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="14_n6tp4"]
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="15_ovqvm"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="15_xow3v"]
-[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://pause_menu.tscn" id="16_a1efi"]
+[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://Global/pause_menu.tscn" id="16_a1efi"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="16_lgibi"]
 [ext_resource type="Script" uid="uid://b2n3xlx6qc84g" path="res://Szene/SzenenWechsel/next_level_3.gd" id="16_ys6ev"]
 [ext_resource type="PackedScene" uid="uid://ctdoyw8s2g6ld" path="res://Szene/World2/Eisz.tscn" id="20_aimu1"]
@@ -113,7 +113,7 @@ position = Vector2(557, 323)
 script = ExtResource("16_ys6ev")
 
 [node name="Eiszapfen" parent="." instance=ExtResource("20_aimu1")]
-position = Vector2(289, -137)
+position = Vector2(198, -145)
 
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]

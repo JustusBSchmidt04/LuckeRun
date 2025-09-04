@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="15_mjdkx"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="16_2rynv"]
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="22_yrftf"]
-[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://pause_menu.tscn" id="23_ougdi"]
+[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://Global/pause_menu.tscn" id="23_ougdi"]
 [ext_resource type="Script" uid="uid://dkbn370cwjk3p" path="res://Szene/SzenenWechsel/next_level_4.gd" id="25_ougdi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3f50i"]

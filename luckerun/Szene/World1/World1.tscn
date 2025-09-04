@@ -14,7 +14,7 @@
 [ext_resource type="Script" uid="uid://dtk5mjb6r736f" path="res://Szene/SzenenWechsel/next_level3.gd" id="15_rp4y1"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="16_p87ue"]
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="23_ub2ox"]
-[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://pause_menu.tscn" id="24_5pxhd"]
+[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://Global/pause_menu.tscn" id="24_5pxhd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3f50i"]
 texture = ExtResource("2_o810c")
@@ -90,8 +90,8 @@ tile_set = SubResource("TileSet_wmdud")
 
 [node name="Sprite2D" type="Sprite2D" parent="Map"]
 show_behind_parent = true
-position = Vector2(508, 306)
-scale = Vector2(0.679688, 0.599609)
+position = Vector2(508, 303.5)
+scale = Vector2(0.679688, 0.604492)
 texture = ExtResource("7_rp4y1")
 
 [node name="Death" type="TileMapLayer" parent="Map"]

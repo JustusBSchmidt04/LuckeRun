@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="15_2l18y"]
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="15_iucbh"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="16_4wm47"]
-[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://pause_menu.tscn" id="16_qcp3n"]
+[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://Global/pause_menu.tscn" id="16_qcp3n"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="17_ma0gh"]
 [ext_resource type="Script" uid="uid://g0j8llrliyp3" path="res://Szene/SzenenWechsel/next_level_end.gd" id="18_wu8r5"]
 
@@ -78,8 +78,8 @@ tile_set = SubResource("TileSet_wmdud")
 
 [node name="Sprite2D" type="Sprite2D" parent="Map"]
 show_behind_parent = true
-position = Vector2(565, 346)
-scale = Vector2(0.75, 0.671875)
+position = Vector2(565, 344)
+scale = Vector2(0.75, 0.675781)
 texture = ExtResource("5_hfot0")
 
 [node name="Death" type="TileMapLayer" parent="Map"]

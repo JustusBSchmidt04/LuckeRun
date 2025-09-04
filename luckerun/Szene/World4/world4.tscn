@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://t5gxqqt3x5nw" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0020.png" id="20_crpib"]
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="22_q80d0"]
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="22_ykpdr"]
-[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://pause_menu.tscn" id="23_0xuor"]
+[ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://Global/pause_menu.tscn" id="23_0xuor"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="23_ii6u2"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="24_suico"]
 [ext_resource type="Script" uid="uid://dvxrvsk2ccn8o" path="res://Szene/SzenenWechsel/next_level_5.gd" id="26_w5jn1"]
@@ -88,8 +88,8 @@ tile_set = SubResource("TileSet_wmdud")
 
 [node name="Sprite2D" type="Sprite2D" parent="Map"]
 show_behind_parent = true
-position = Vector2(570, 299)
-scale = Vector2(0.749837, 0.625488)
+position = Vector2(606.063, 299)
+scale = Vector2(0.796793, 0.625488)
 texture = ExtResource("6_77hfg")
 
 [node name="Death" type="TileMapLayer" parent="Map"]
