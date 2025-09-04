@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://cknm5xbej4120"]
 
 [node name="Deathcounter" type="PanelContainer"]
-offset_left = 89.0
-offset_top = 3.0
-offset_right = 179.0
-offset_bottom = 35.0
+offset_left = 88.0
+offset_right = 178.0
+offset_bottom = 32.0
 scale = Vector2(0.920001, 1)
 
 [node name="Label" type="Label" parent="."]

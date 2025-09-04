@@ -113,7 +113,7 @@ position = Vector2(557, 323)
 script = ExtResource("16_ys6ev")
 
 [node name="Eiszapfen" parent="." instance=ExtResource("20_aimu1")]
-position = Vector2(198, -145)
+position = Vector2(330, 14)
 
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]

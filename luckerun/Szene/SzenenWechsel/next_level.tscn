@@ -20,7 +20,6 @@ scale = Vector2(0.395833, 0.395833)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flugticket/Area2D"]
 position = Vector2(219.455, 176.727)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_35l6a")
 
 [connection signal="body_entered" from="Flugticket/Area2D" to="." method="_on_area_2d_body_entered"]

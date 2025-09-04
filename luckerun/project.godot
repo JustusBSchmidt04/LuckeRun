@@ -29,6 +29,10 @@ window/size/viewport_width=1020
 window/size/viewport_height=600
 window/stretch/mode="canvas_items"
 
+[global_group]
+
+player=""
+
 [input]
 
 left={
