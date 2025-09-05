@@ -123,6 +123,7 @@ position = Vector2(591, 141)
 script = ExtResource("26_w5jn1")
 
 [node name="NextLevelskip2" parent="." instance=ExtResource("24_suico")]
+visible = false
 position = Vector2(-130, 8)
 script = ExtResource("26_w5jn1")
 

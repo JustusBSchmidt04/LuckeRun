@@ -222,7 +222,8 @@ position = Vector2(338, 494)
 position = Vector2(816, 310)
 
 [node name="NextLevelskip" parent="." instance=ExtResource("24_evqb7")]
-position = Vector2(106, 327)
+visible = false
+position = Vector2(18, 323)
 script = ExtResource("25_i1hnt")
 
 [node name="Figuren" type="Node2D" parent="."]
