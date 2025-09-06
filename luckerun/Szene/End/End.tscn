@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ckrhpmh7oj700"]
+[gd_scene load_steps=13 format=3 uid="uid://ckrhpmh7oj700"]
 
 [ext_resource type="Script" uid="uid://bayyj3q14lr0e" path="res://Szene/End/end.gd" id="1_ht761"]
 [ext_resource type="Script" uid="uid://bdl8nu5510v12" path="res://Szene/End/quit_button.gd" id="2_gketx"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://ctvlndmkbipq4" path="res://Global/timerend.gd" id="6_s07lu"]
 [ext_resource type="Texture2D" uid="uid://drqt2vr5uewe8" path="res://Assets/Background/Endscreen.jpg" id="7_cnq0f"]
 [ext_resource type="Script" uid="uid://do8nc1o0xgrat" path="res://Szene/End/hs_button.gd" id="8_nefj8"]
+[ext_resource type="Texture2D" uid="uid://cfrjnsf5efpiv" path="res://Assets/Background/Weltreise_abgeschlossen_Background.png" id="9_fy0b3"]
 
 [sub_resource type="Theme" id="Theme_kjlux"]
 
@@ -21,38 +22,38 @@ script = ExtResource("1_ht761")
 
 [node name="DeathCount" type="Label" parent="."]
 top_level = true
-offset_left = 241.0
-offset_top = 291.0
-offset_right = 282.0
-offset_bottom = 319.0
+offset_left = 553.0
+offset_top = 201.0
+offset_right = 594.0
+offset_bottom = 232.0
 theme_override_font_sizes/font_size = 20
 
 [node name="QuitButton" type="Button" parent="." node_paths=PackedStringArray("shortcut_context")]
-offset_left = 619.0
-offset_top = 403.0
-offset_right = 717.0
-offset_bottom = 446.0
+offset_left = 552.0
+offset_top = 280.0
+offset_right = 628.0
+offset_bottom = 310.0
 tooltip_text = "Close the Game"
 shortcut_context = NodePath(".")
 theme = SubResource("Theme_kjlux")
 theme_override_colors/font_hover_color = Color(0.501961, 0.729412, 0.141176, 1)
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 15
 action_mode = 0
 text = "Quit"
 script = ExtResource("2_gketx")
 
 [node name="RestartButton" type="Button" parent="." node_paths=PackedStringArray("shortcut_context")]
-offset_left = 654.0
-offset_top = 452.0
-offset_right = 754.0
-offset_bottom = 495.0
+offset_left = 552.0
+offset_top = 318.0
+offset_right = 633.0
+offset_bottom = 348.0
 tooltip_text = "Restart the Game"
 shortcut_context = NodePath(".")
 theme = SubResource("Theme_kjlux")
 theme_override_colors/font_hover_color = Color(0.501961, 0.729412, 0.141176, 1)
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 15
 action_mode = 0
-text = "Quit"
+text = "Restart"
 script = ExtResource("3_nefj8")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -61,16 +62,16 @@ volume_db = -13.215
 autoplay = true
 
 [node name="HSButton" type="Button" parent="."]
-offset_left = 369.0
-offset_top = 366.0
-offset_right = 464.0
-offset_bottom = 405.0
+offset_left = 554.0
+offset_top = 236.0
+offset_right = 629.0
+offset_bottom = 267.0
 tooltip_text = "Shows your Highscores"
-text = "Highscore"
+text = "HS"
 script = ExtResource("8_nefj8")
 
 [node name="Endscreen" type="Sprite2D" parent="."]
-position = Vector2(510.125, 304.875)
+position = Vector2(1759, 475)
 scale = Vector2(0.819865, 0.737798)
 texture = ExtResource("7_cnq0f")
 
@@ -79,10 +80,10 @@ show_behind_parent = false
 top_level = true
 visibility_layer = 3
 use_parent_material = true
-offset_left = 310.0
-offset_top = 228.0
-offset_right = 574.0
-offset_bottom = 302.0
+offset_left = 527.0
+offset_top = 146.0
+offset_right = 791.0
+offset_bottom = 220.0
 theme = SubResource("Theme_ht761")
 script = ExtResource("6_s07lu")
 
@@ -113,3 +114,8 @@ offset_right = 52.0
 offset_bottom = 54.0
 theme_override_font_sizes/font_size = 20
 horizontal_alignment = 2
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(511, 309)
+scale = Vector2(1.05247, 1.05247)
+texture = ExtResource("9_fy0b3")
