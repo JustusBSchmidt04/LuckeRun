@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://drcho63gxex87" path="res://Szene/End/highscore_screen.gd" id="1_7alww"]
 [ext_resource type="Script" uid="uid://bdl8nu5510v12" path="res://Szene/End/quit_button.gd" id="2_nh0mg"]
-[ext_resource type="Texture2D" uid="uid://5u402270fmys" path="res://Assets/Background/Exciting Pixel Art Gaming Wallpaper with Podium.png" id="3_hs4qb"]
+[ext_resource type="Texture2D" uid="uid://cyae4ivsot3yc" path="res://Assets/Background/EndScreen.png" id="3_hs4qb"]
 
 [sub_resource type="Theme" id="Theme_hs4qb"]
 
@@ -50,8 +50,8 @@ offset_bottom = 107.0
 theme_override_font_sizes/font_size = 50
 text = "Highscores:"
 
-[node name="ExcitingPixelArtGamingWallpaperWithPodium" type="Sprite2D" parent="."]
+[node name="EndScreen" type="Sprite2D" parent="."]
 show_behind_parent = true
-position = Vector2(485, 350)
-scale = Vector2(0.563672, 0.642361)
+position = Vector2(515.125, 306)
+scale = Vector2(0.673014, 0.668945)
 texture = ExtResource("3_hs4qb")

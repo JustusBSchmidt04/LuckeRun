@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cvihcjrmouwvb" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Characters/tile_0015.png" id="2_7o1gr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uujtu"]
-radius = 66.0076
+radius = 106.569
 
 [node name="Figur1" type="Node2D"]
 script = ExtResource("1_kpai2")
