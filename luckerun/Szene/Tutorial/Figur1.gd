@@ -2,13 +2,14 @@ extends Node2D
 
 var detected = false
 var dialog = [
-	"Hallo! Willkommen im Spiel.",
-	"Ich habe eine Aufgabe für dich.",
-	"Bist du bereit?"
+	"Du hast keine Lust mehr auf Studenten?",
+	"Nimm dir deine verdiente Auszeit",
+	"Viel Spaß auf deiner Weltreise",
+	"Und komm bloß nicht in Kontakt mit Uni Sachen "
 ]
 var current_index = 0
 var text_timer = 0.0
-var display_time = 2.0  # Sekunden pro Text
+var display_time = 4.0  # Sekunden pro Text
 
 var label
 
