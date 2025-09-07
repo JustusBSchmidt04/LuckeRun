@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dndij0e65b0hs"]
+[gd_scene load_steps=5 format=3 uid="uid://dndij0e65b0hs"]
 
 [ext_resource type="Script" uid="uid://5eg5vv44cb8n" path="res://Szene/Tutorial/Figur1.gd" id="1_kpai2"]
 [ext_resource type="Texture2D" uid="uid://cvihcjrmouwvb" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Characters/tile_0015.png" id="2_7o1gr"]
+[ext_resource type="FontFile" path="res://Fonts/poco/Poco.tres" id="3_7o1gr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uujtu"]
 radius = 106.569
@@ -28,6 +29,8 @@ offset_bottom = -13.0
 
 [node name="Label" type="Label" parent="Text"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_7o1gr")
+theme_override_font_sizes/font_size = 25
 text = "Hi, wie geht es dir"
 
 [connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]

@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2delqx8bidb6"]
+[gd_scene load_steps=7 format=3 uid="uid://c2delqx8bidb6"]
 
 [ext_resource type="Script" uid="uid://b5rox54tye43o" path="res://Global/control.gd" id="1_klhi8"]
 [ext_resource type="PackedScene" uid="uid://baiulecik0fib" path="res://Sounds/volume_slider.tscn" id="2_cd271"]
+[ext_resource type="FontFile" uid="uid://bnhl4mpb1333s" path="res://Fonts/poco/Poco.ttf" id="2_mmh25"]
+[ext_resource type="Texture2D" uid="uid://do1i4jhm0gy3s" path="res://Assets/Background/SecretaryRoom.png" id="3_extsi"]
 
 [sub_resource type="Theme" id="Theme_v464q"]
 
@@ -26,7 +28,8 @@ tooltip_text = "Starts the Game"
 shortcut_context = NodePath(".")
 theme = SubResource("Theme_v464q")
 theme_override_colors/font_hover_color = Color(0.501961, 0.729412, 0.141176, 1)
-theme_override_font_sizes/font_size = 25
+theme_override_fonts/font = ExtResource("2_mmh25")
+theme_override_font_sizes/font_size = 50
 action_mode = 0
 text = "Back"
 
@@ -40,3 +43,9 @@ offset_bottom = 286.0
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Control/VolumeSlider"]
 position = Vector2(0, -188)
 stream = SubResource("AudioStream_1deg5")
+
+[node name="SecretaryRoom" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(510.5, 316.5)
+scale = Vector2(0.666016, 0.612305)
+texture = ExtResource("3_extsi")

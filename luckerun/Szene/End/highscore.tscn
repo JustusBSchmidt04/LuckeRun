@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3b1mew6doj57"]
+[gd_scene load_steps=8 format=3 uid="uid://b3b1mew6doj57"]
 
 [ext_resource type="Script" uid="uid://drcho63gxex87" path="res://Szene/End/highscore_screen.gd" id="1_7alww"]
 [ext_resource type="Script" uid="uid://bdl8nu5510v12" path="res://Szene/End/quit_button.gd" id="2_nh0mg"]
+[ext_resource type="FontFile" path="res://Fonts/poco/Poco.tres" id="2_po626"]
 [ext_resource type="Texture2D" uid="uid://cyae4ivsot3yc" path="res://Assets/Background/EndScreen.png" id="3_hs4qb"]
 [ext_resource type="Script" uid="uid://bn61bhpuph6mb" path="res://Szene/End/back_button.gd" id="3_jb3jm"]
 [ext_resource type="Script" uid="uid://b22avqqgh6tml" path="res://Szene/End/new_run.gd" id="4_t5yte"]
@@ -38,7 +39,8 @@ tooltip_text = "Close the Game"
 shortcut_context = NodePath(".")
 theme = SubResource("Theme_hs4qb")
 theme_override_colors/font_hover_color = Color(0.501961, 0.729412, 0.141176, 1)
-theme_override_font_sizes/font_size = 25
+theme_override_fonts/font = ExtResource("2_po626")
+theme_override_font_sizes/font_size = 30
 action_mode = 0
 text = "Quit"
 script = ExtResource("2_nh0mg")
@@ -51,9 +53,9 @@ offset_right = 295.0
 offset_bottom = 577.0
 tooltip_text = "Back to Main Menu"
 shortcut_context = NodePath(".")
-theme = SubResource("Theme_hs4qb")
 theme_override_colors/font_hover_color = Color(0.501961, 0.729412, 0.141176, 1)
-theme_override_font_sizes/font_size = 25
+theme_override_fonts/font = ExtResource("2_po626")
+theme_override_font_sizes/font_size = 30
 action_mode = 0
 text = "Main Menu"
 script = ExtResource("3_jb3jm")
@@ -68,7 +70,8 @@ tooltip_text = "New Game"
 shortcut_context = NodePath(".")
 theme = SubResource("Theme_hs4qb")
 theme_override_colors/font_hover_color = Color(0.501961, 0.729412, 0.141176, 1)
-theme_override_font_sizes/font_size = 25
+theme_override_fonts/font = ExtResource("2_po626")
+theme_override_font_sizes/font_size = 30
 action_mode = 0
 text = "New Run"
 script = ExtResource("4_t5yte")
@@ -82,9 +85,10 @@ texture = ExtResource("3_hs4qb")
 [node name="HighscoreTxt" type="RichTextLabel" parent="."]
 layout_mode = 0
 offset_left = 338.0
-offset_top = 64.0
+offset_top = 43.0
 offset_right = 984.0
-offset_bottom = 160.0
-theme_override_font_sizes/normal_font_size = 50
+offset_bottom = 139.0
+theme_override_fonts/normal_font = ExtResource("2_po626")
+theme_override_font_sizes/normal_font_size = 75
 text = "Highscores:"
 fit_content = true

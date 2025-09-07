@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://baiulecik0fib"]
+[gd_scene load_steps=2 format=3 uid="uid://baiulecik0fib"]
+
+[ext_resource type="FontFile" path="res://Fonts/poco/Poco.tres" id="1_ra6je"]
 
 [node name="VolumeSlider" type="HSlider"]
 offset_left = 479.0
@@ -12,8 +14,12 @@ step = 0.1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 27.0
-offset_top = 30.0
-offset_right = 213.0
-offset_bottom = 70.0
+offset_left = -5.0
+offset_top = 21.0
+offset_right = 236.0
+offset_bottom = 61.0
+theme_override_fonts/normal_font = ExtResource("1_ra6je")
+theme_override_font_sizes/mono_font_size = 50
+theme_override_font_sizes/normal_font_size = 30
 text = "Change Volume"
+fit_content = true
