@@ -7,7 +7,7 @@ func _ready():
 	list_container = get_node_or_null("Hintergrund/ScrollContainer/HighscoreListe")
 	if list_container == null:
 		# Debughilfe: Baum ausgeben, damit man den korrekten Pfad sieht
-		push_error("⚠ HighscoreListe nicht gefunden! Aktueller Baum:\n" + get_tree().get_current_scene().get_tree_string_pretty())
+
 		return
 
 	show_highscores()
