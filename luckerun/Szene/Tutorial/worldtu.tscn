@@ -236,7 +236,7 @@ script = ExtResource("25_i1hnt")
 [node name="Figuren" type="Node2D" parent="."]
 position = Vector2(492, 451)
 
-[node name="Figur1" parent="Figuren" instance=ExtResource("26_6xejw")]
+[node name="NPC" parent="Figuren" instance=ExtResource("26_6xejw")]
 position = Vector2(177, -78)
 
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]

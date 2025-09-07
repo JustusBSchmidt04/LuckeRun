@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://twaq2q2wy0nt"]
+
+[ext_resource type="Script" uid="uid://b4dwi7uc362gy" path="res://Szene/World2/EisZ.gd" id="1_fxk0g"]
+[ext_resource type="Texture2D" uid="uid://cmbalw5gnelql" path="res://Assets/Enemies/Pen.png" id="2_hpqb3"]
+[ext_resource type="Script" uid="uid://22nvh8ocd51j" path="res://Szene/World2/kill_area.gd" id="3_ae5te"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fgahy"]
+radius = 51.0
+height = 268.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_chksj"]
+radius = 16.0312
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fgahy"]
+radius = 18.0
+
+[node name="Stift" type="CharacterBody2D"]
+script = ExtResource("1_fxk0g")
+
+[node name="DetectionArea" type="Area2D" parent="."]
+
+[node name="AuslöseBereich" type="CollisionShape2D" parent="DetectionArea"]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_fgahy")
+
+[node name="Body" type="CollisionShape2D" parent="."]
+position = Vector2(-2.38419e-07, -9)
+shape = SubResource("CircleShape2D_chksj")
+
+[node name="Pen" type="Sprite2D" parent="Body"]
+position = Vector2(-1, 2)
+scale = Vector2(0.0185811, 0.0185811)
+texture = ExtResource("2_hpqb3")
+
+[node name="KillArea" type="Area2D" parent="."]
+position = Vector2(275, 109)
+script = ExtResource("3_ae5te")
+
+[node name="TötungsBereich" type="CollisionShape2D" parent="KillArea"]
+position = Vector2(-275, -118)
+shape = SubResource("CircleShape2D_fgahy")
+
+[connection signal="area_entered" from="DetectionArea" to="." method="_on_detection_area_area_entered"]
+[connection signal="area_shape_entered" from="DetectionArea" to="." method="_on_detection_area_area_shape_entered"]
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
