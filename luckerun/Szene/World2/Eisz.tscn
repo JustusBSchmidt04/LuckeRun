@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://ctdoyw8s2g6ld"]
 
 [ext_resource type="Script" uid="uid://b4dwi7uc362gy" path="res://Szene/World2/EisZ.gd" id="1_chksj"]
-[ext_resource type="Texture2D" uid="uid://cvihcjrmouwvb" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Characters/tile_0015.png" id="2_ec74i"]
+[ext_resource type="Texture2D" uid="uid://cmbalw5gnelql" path="res://Assets/Enemies/Pen.png" id="2_ec74i"]
 [ext_resource type="Script" uid="uid://22nvh8ocd51j" path="res://Szene/World2/kill_area.gd" id="3_ec74i"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fgahy"]
@@ -27,11 +27,10 @@ shape = SubResource("CapsuleShape2D_fgahy")
 position = Vector2(-2.38419e-07, -9)
 shape = SubResource("CircleShape2D_chksj")
 
-[node name="Aussehen" type="Sprite2D" parent="Body"]
-position = Vector2(1, 5)
-scale = Vector2(1.6875, 1.41667)
+[node name="Pen" type="Sprite2D" parent="Body"]
+position = Vector2(-1, 2)
+scale = Vector2(0.0185811, 0.0185811)
 texture = ExtResource("2_ec74i")
-flip_v = true
 
 [node name="KillArea" type="Area2D" parent="."]
 position = Vector2(275, 109)

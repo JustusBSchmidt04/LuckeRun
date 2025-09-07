@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var is_falling := false
-var fall_speed := 200.0
+var fall_speed := 100.0
 
 func _physics_process(delta):
 	if is_falling:
