@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://dyasaxthgybd"]
+[gd_scene load_steps=27 format=4 uid="uid://dyasaxthgybd"]
 
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_75hha"]
 [ext_resource type="Texture2D" uid="uid://coi1kp14qvs54" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0002.png" id="3_kvs7f"]
@@ -9,8 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://t5gxqqt3x5nw" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0020.png" id="11_bkpq6"]
 [ext_resource type="Texture2D" uid="uid://bryfdpcpbnkii" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0004.png" id="12_5v5a0"]
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="14_x0bhd"]
+[ext_resource type="Script" uid="uid://c1r6pf6ka3idy" path="res://Szene/World3/world_name.gd" id="15_2rynv"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="15_mjdkx"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="16_2rynv"]
+[ext_resource type="FontFile" path="res://Fonts/poco/Poco.tres" id="16_wlbpv"]
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="22_yrftf"]
 [ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://Global/pause_menu.tscn" id="23_ougdi"]
 [ext_resource type="Script" uid="uid://dkbn370cwjk3p" path="res://Szene/SzenenWechsel/next_level_4.gd" id="25_ougdi"]
@@ -127,6 +129,27 @@ script = ExtResource("25_ougdi")
 position = Vector2(812, 345)
 script = ExtResource("25_ougdi")
 
+[node name="WorldName" type="CanvasLayer" parent="."]
+script = ExtResource("15_2rynv")
+
+[node name="WN_Background" type="Panel" parent="WorldName"]
+offset_left = 433.0
+offset_top = 3.0
+offset_right = 487.0
+offset_bottom = 38.0
+
+[node name="WN_Text" type="Label" parent="WorldName/WN_Background"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = 140.0
+offset_bottom = 35.0
+theme_override_fonts/font = ExtResource("16_wlbpv")
+theme_override_font_sizes/font_size = 20
+
+[node name="WN_Timer" type="Timer" parent="WorldName"]
+
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]
 [connection signal="child_entered_tree" from="Luckes_Body" to="." method="_on_luckes_body_child_entered_tree"]
+[connection signal="timeout" from="WorldName/WN_Timer" to="WorldName" method="_on_wn_timer_timeout"]

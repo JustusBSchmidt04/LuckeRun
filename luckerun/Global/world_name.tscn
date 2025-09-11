@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://v5gakdy5evtx"]
+
+[ext_resource type="Script" uid="uid://dcyfgnqc5karg" path="res://Szene/World1/world_name.gd" id="1_5usp3"]
+[ext_resource type="FontFile" path="res://Fonts/poco/Poco.tres" id="2_x4dy3"]
+
+[node name="WorldName" type="CanvasLayer"]
+script = ExtResource("1_5usp3")
+
+[node name="WN_Background" type="Panel" parent="."]
+offset_left = 433.0
+offset_top = 3.0
+offset_right = 571.0
+offset_bottom = 38.0
+
+[node name="WN_Text" type="Label" parent="WN_Background"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = 140.0
+offset_bottom = 35.0
+theme_override_fonts/font = ExtResource("2_x4dy3")
+theme_override_font_sizes/font_size = 20
+
+[node name="WN_Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="WN_Timer" to="." method="_on_wn_timer_timeout"]

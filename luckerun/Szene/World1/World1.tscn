@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://7mffy5d5o5i5"]
+[gd_scene load_steps=28 format=4 uid="uid://7mffy5d5o5i5"]
 
 [ext_resource type="Script" uid="uid://bae0tlb0cko1b" path="res://Szene/World1/world_1.gd" id="1_u16ad"]
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_o810c"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://dtk5mjb6r736f" path="res://Szene/SzenenWechsel/next_level3.gd" id="15_rp4y1"]
 [ext_resource type="PackedScene" uid="uid://ctdoyw8s2g6ld" path="res://Szene/World2/Eisz.tscn" id="16_i7wq0"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="16_p87ue"]
+[ext_resource type="PackedScene" uid="uid://v5gakdy5evtx" path="res://Global/world_name.tscn" id="17_3f50i"]
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="23_ub2ox"]
 [ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://Global/pause_menu.tscn" id="24_5pxhd"]
 
@@ -132,6 +133,8 @@ script = ExtResource("15_rp4y1")
 
 [node name="Eiszapfen" parent="." instance=ExtResource("16_i7wq0")]
 position = Vector2(411, 16)
+
+[node name="WorldName" parent="." instance=ExtResource("17_3f50i")]
 
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]

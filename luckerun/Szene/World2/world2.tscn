@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://blejnwm608df"]
+[gd_scene load_steps=26 format=4 uid="uid://blejnwm608df"]
 
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_ys6ev"]
 [ext_resource type="Texture2D" uid="uid://coi1kp14qvs54" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0002.png" id="3_n6px6"]
@@ -12,8 +12,10 @@
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="15_ovqvm"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="15_xow3v"]
 [ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://Global/pause_menu.tscn" id="16_a1efi"]
+[ext_resource type="Script" uid="uid://pmf1de2mxk0y" path="res://Szene/World2/world_name.gd" id="16_kvs7f"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="16_lgibi"]
 [ext_resource type="Script" uid="uid://b2n3xlx6qc84g" path="res://Szene/SzenenWechsel/next_level_3.gd" id="16_ys6ev"]
+[ext_resource type="FontFile" path="res://Fonts/poco/Poco.tres" id="17_kvs7f"]
 [ext_resource type="PackedScene" uid="uid://ctdoyw8s2g6ld" path="res://Szene/World2/Eisz.tscn" id="20_aimu1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3f50i"]
@@ -118,5 +120,26 @@ script = ExtResource("16_ys6ev")
 position = Vector2(586, -8)
 script = ExtResource("15_o6r5l")
 
+[node name="WorldName" type="CanvasLayer" parent="."]
+script = ExtResource("16_kvs7f")
+
+[node name="WN_Background" type="Panel" parent="WorldName"]
+offset_left = 453.0
+offset_top = 5.0
+offset_right = 520.0
+offset_bottom = 40.0
+
+[node name="WN_Text" type="Label" parent="WorldName/WN_Background"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = 140.0
+offset_bottom = 35.0
+theme_override_fonts/font = ExtResource("17_kvs7f")
+theme_override_font_sizes/font_size = 20
+
+[node name="WN_Timer" type="Timer" parent="WorldName"]
+
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]
+[connection signal="timeout" from="WorldName/WN_Timer" to="WorldName" method="_on_wn_timer_timeout"]

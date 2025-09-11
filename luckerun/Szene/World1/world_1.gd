@@ -3,5 +3,6 @@ func _ready():
 	GlobalDeathcounter.deaths = 0
 	GlobalTimer.reset()
 	GlobalTimer.start()
+	
 
 	
