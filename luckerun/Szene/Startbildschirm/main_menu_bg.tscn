@@ -1,8 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://5opfomoph68k"]
+[gd_scene load_steps=9 format=3 uid="uid://5opfomoph68k"]
 
 [ext_resource type="Script" uid="uid://cvqiaiccpsrgp" path="res://Szene/Startbildschirm/main_menu.gd" id="1_u6l3h"]
 [ext_resource type="FontFile" path="res://Fonts/poco/Poco.tres" id="2_67eve"]
 [ext_resource type="Texture2D" uid="uid://bdyo4enrdb6ws" path="res://Assets/Background/MainMenu.png" id="2_idj2g"]
+[ext_resource type="Script" uid="uid://djbcydxat1bhv" path="res://Szene/Startbildschirm/highscores_button.gd" id="3_5vcup"]
+[ext_resource type="Script" uid="uid://cv7b1xs4mpsyj" path="res://Szene/Startbildschirm/play_button.gd" id="3_17isi"]
+[ext_resource type="Script" uid="uid://bpadc705ojpx3" path="res://Szene/Startbildschirm/options_button.gd" id="3_tbywc"]
+[ext_resource type="Script" uid="uid://coan5tlemf3uf" path="res://Szene/Startbildschirm/quit_button.gd" id="6_orp8p"]
 
 [sub_resource type="Theme" id="Theme_u6l3h"]
 
@@ -13,17 +17,27 @@
 [node name="MainMenu" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_top = 1.0
-offset_right = 1027.0
-offset_bottom = 602.0
+offset_left = 479.0
+offset_top = 343.0
+offset_right = 999.0
+offset_bottom = 571.0
 script = ExtResource("1_u6l3h")
 
-[node name="PlayButton" type="Button" parent="MainMenu" node_paths=PackedStringArray("shortcut_context")]
+[node name="Container" type="VBoxContainer" parent="MainMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.066
+anchor_top = -0.261
+anchor_right = 0.066
+anchor_bottom = -0.261
+offset_left = -173.32
+offset_top = -158.492
+offset_right = 177.68
+offset_bottom = 233.508
+theme_override_constants/separation = 40
+
+[node name="PlayButton" type="Button" parent="MainMenu/Container" node_paths=PackedStringArray("shortcut_context")]
 layout_mode = 2
-offset_left = 390.0
-offset_top = 30.0
-offset_right = 640.0
-offset_bottom = 200.0
 tooltip_text = "Start the Game"
 shortcut_context = NodePath(".")
 theme = SubResource("Theme_u6l3h")
@@ -32,13 +46,22 @@ theme_override_fonts/font = ExtResource("2_67eve")
 theme_override_font_sizes/font_size = 50
 action_mode = 0
 text = "Play"
+script = ExtResource("3_17isi")
 
-[node name="OptionsButton" type="Button" parent="MainMenu" node_paths=PackedStringArray("shortcut_context")]
-layout_mode = 0
-offset_left = 390.0
-offset_top = 220.0
-offset_right = 640.0
-offset_bottom = 390.0
+[node name="HighscoresButton" type="Button" parent="MainMenu/Container" node_paths=PackedStringArray("shortcut_context")]
+layout_mode = 2
+tooltip_text = "Shows your previous Highscores"
+shortcut_context = NodePath(".")
+theme = SubResource("Theme_u6l3h")
+theme_override_colors/font_hover_color = Color(0.501961, 0.729412, 0.141176, 1)
+theme_override_fonts/font = ExtResource("2_67eve")
+theme_override_font_sizes/font_size = 50
+action_mode = 0
+text = "Highscores"
+script = ExtResource("3_5vcup")
+
+[node name="OptionsButton" type="Button" parent="MainMenu/Container" node_paths=PackedStringArray("shortcut_context")]
+layout_mode = 2
 tooltip_text = "Go to Options"
 shortcut_context = NodePath(".")
 theme = SubResource("Theme_u6l3h")
@@ -47,13 +70,10 @@ theme_override_fonts/font = ExtResource("2_67eve")
 theme_override_font_sizes/font_size = 50
 action_mode = 0
 text = "Options"
+script = ExtResource("3_tbywc")
 
-[node name="QuitButton" type="Button" parent="MainMenu" node_paths=PackedStringArray("shortcut_context")]
-layout_mode = 0
-offset_left = 390.0
-offset_top = 410.0
-offset_right = 640.0
-offset_bottom = 580.0
+[node name="QuitButton" type="Button" parent="MainMenu/Container" node_paths=PackedStringArray("shortcut_context")]
+layout_mode = 2
 tooltip_text = "Close the Game"
 shortcut_context = NodePath(".")
 theme = SubResource("Theme_u6l3h")
@@ -62,6 +82,7 @@ theme_override_fonts/font = ExtResource("2_67eve")
 theme_override_font_sizes/font_size = 50
 action_mode = 0
 text = "Quit"
+script = ExtResource("6_orp8p")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(512, 301)

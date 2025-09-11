@@ -59,6 +59,7 @@ func show_highscores():
 			# Highlight (gold + größere Schrift)
 			line.add_theme_color_override("font_color", Color(1.0, 0.84, 0.3))
 			line.add_theme_font_size_override("font_size", 20)
+			
 
 		row.add_child(line)
 
