@@ -20,7 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://bf12bqcro0b6e" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0013.png" id="18_00idd"]
 [ext_resource type="Texture2D" uid="uid://gj3ntwwiitpp" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0000.png" id="19_6rwmt"]
 [ext_resource type="Texture2D" uid="uid://t5gxqqt3x5nw" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0020.png" id="20_rq7we"]
-[ext_resource type="Texture2D" uid="uid://ctefqixh8muxc" path="res://Assets/Background/ClassroomBackground.png" id="21_0i0rb"]
+[ext_resource type="Texture2D" uid="uid://dd1gkgl81uqtn" path="res://Assets/Background/ClassroomBackgroundBearbeitet.png" id="21_j1xs2"]
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="22_0ye0k"]
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="23_6xejw"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="23_a2oui"]
@@ -204,7 +204,7 @@ script = SubResource("GDScript_t5cpm")
 show_behind_parent = true
 position = Vector2(632, 356)
 scale = Vector2(0.852427, 0.726318)
-texture = ExtResource("21_0i0rb")
+texture = ExtResource("21_j1xs2")
 
 [node name="Luckes_Body" parent="." instance=ExtResource("22_0ye0k")]
 position = Vector2(334, 437)

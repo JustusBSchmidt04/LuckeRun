@@ -3,9 +3,11 @@ extends Node2D
 var detected = false
 var dialog = [
 	"Du hast keine Lust mehr auf Studenten?",
-	"Nimm dir deine verdiente Auszeit",
-	"Viel Spaß auf deiner Weltreise",
-	"Und komm bloß nicht in Kontakt mit Uni Sachen "
+	"Nimm dir doch mal eine verdiente Auszeit.",
+	"Wäre doch die Möglichkeit mal auf Weltreise zu gehen!",
+	"Dann viel Spaß schon mal auf deiner Weltreise.",
+	"Und komm bloß nicht in Kontakt mit Uni Sachen!",
+	"Ach und in den meisten Spielen wiegen Tode mehr als Zeit."
 ]
 var current_index = 0
 var text_timer = 0.0
