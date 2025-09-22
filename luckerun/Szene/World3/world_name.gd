@@ -10,7 +10,7 @@ func _ready():
 	panel.visible = false
 
 	# Testanzeige beim Weltstart
-	show_world_name("Rom")
+	show_world_name("Griechenland")
 
 func show_world_name(name: String):
 	label.text = name

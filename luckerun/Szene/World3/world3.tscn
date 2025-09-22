@@ -135,7 +135,7 @@ script = ExtResource("15_2rynv")
 [node name="WN_Background" type="Panel" parent="WorldName"]
 offset_left = 433.0
 offset_top = 3.0
-offset_right = 487.0
+offset_right = 559.0
 offset_bottom = 38.0
 
 [node name="WN_Text" type="Label" parent="WorldName/WN_Background"]

@@ -5,9 +5,8 @@ var dialog = [
 	"Du hast keine Lust mehr auf Studenten?",
 	"Nimm dir doch mal eine verdiente Auszeit.",
 	"Wäre doch die Möglichkeit mal auf Weltreise zu gehen!",
-	"Dann viel Spaß schon mal auf deiner Weltreise.",
-	"Und komm bloß nicht in Kontakt mit Uni Sachen!",
-	"Ach und in den meisten Spielen wiegen Tode mehr als Zeit."
+	"Komm bloß nicht in Kontakt mit Uni Sachen!",
+	"Ach und die Anzahl der Tode ist wichtiger als die Zeit."
 ]
 var current_index = 0
 var text_timer = 0.0
