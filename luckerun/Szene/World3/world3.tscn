@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://dyasaxthgybd"]
+[gd_scene load_steps=28 format=4 uid="uid://dyasaxthgybd"]
 
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_75hha"]
 [ext_resource type="Texture2D" uid="uid://coi1kp14qvs54" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0002.png" id="3_kvs7f"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cwcn8oqaows4l" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0003.png" id="4_ovqvm"]
 [ext_resource type="Texture2D" uid="uid://ckmssm2r66et" path="res://Assets/Background/Rom.png" id="6_q23db"]
 [ext_resource type="Texture2D" uid="uid://d24ucurpdakfj" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0082.png" id="6_sglur"]
+[ext_resource type="PackedScene" uid="uid://ctdoyw8s2g6ld" path="res://Szene/World2/Eisz.tscn" id="7_wlbpv"]
 [ext_resource type="Texture2D" uid="uid://t5gxqqt3x5nw" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0020.png" id="11_bkpq6"]
 [ext_resource type="Texture2D" uid="uid://bryfdpcpbnkii" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/Backgrounds/tile_0004.png" id="12_5v5a0"]
 [ext_resource type="PackedScene" uid="uid://dntsryq2y3bpt" path="res://Assets/Charakters/Player/Lucke.tscn" id="14_x0bhd"]
@@ -148,6 +149,14 @@ theme_override_fonts/font = ExtResource("16_wlbpv")
 theme_override_font_sizes/font_size = 20
 
 [node name="WN_Timer" type="Timer" parent="WorldName"]
+
+[node name="Stift" parent="." instance=ExtResource("7_wlbpv")]
+position = Vector2(476, 445)
+scale = Vector2(0.966797, 0.942383)
+
+[node name="Stift2" parent="." instance=ExtResource("7_wlbpv")]
+position = Vector2(889, 440)
+scale = Vector2(0.966797, 0.942383)
 
 [connection signal="child_entered_tree" from="Map/Death" to="Luckes_Body" method="_on_death_child_entered_tree"]
 [connection signal="item_rect_changed" from="Map/Death" to="." method="_on_death_item_rect_changed"]

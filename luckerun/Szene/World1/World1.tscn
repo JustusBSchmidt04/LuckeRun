@@ -131,7 +131,7 @@ visible = false
 position = Vector2(-142, -14)
 script = ExtResource("15_rp4y1")
 
-[node name="Eiszapfen" parent="." instance=ExtResource("16_i7wq0")]
+[node name="Stift" parent="." instance=ExtResource("16_i7wq0")]
 position = Vector2(411, 16)
 
 [node name="WorldName" parent="." instance=ExtResource("17_3f50i")]
