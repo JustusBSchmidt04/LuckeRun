@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=4 uid="uid://0s2qufbepae8"]
+[gd_scene load_steps=55 format=4 uid="uid://0s2qufbepae8"]
 
 [ext_resource type="Script" uid="uid://bae0tlb0cko1b" path="res://Szene/World1/world_1.gd" id="1_oc4no"]
 [ext_resource type="Texture2D" uid="uid://c7hueggefqbjg" path="res://Assets_kenney/kenney_pixel-platformer/Tiles/tile_0004.png" id="2_6xejw"]
@@ -25,7 +25,6 @@
 [ext_resource type="PackedScene" uid="uid://cknm5xbej4120" path="res://Global/deathcounter.tscn" id="23_6xejw"]
 [ext_resource type="PackedScene" uid="uid://bftpaaxqf7k8n" path="res://Global/timer.tscn" id="23_a2oui"]
 [ext_resource type="PackedScene" uid="uid://b4x3jtb8cwm14" path="res://Szene/SzenenWechsel/next_level.tscn" id="24_evqb7"]
-[ext_resource type="Script" uid="uid://bqqg5i45mpgd3" path="res://Szene/SzenenWechsel/next_level_2.gd" id="25_i1hnt"]
 [ext_resource type="PackedScene" uid="uid://dndij0e65b0hs" path="res://Szene/Tutorial/figur_1.tscn" id="26_6xejw"]
 [ext_resource type="PackedScene" uid="uid://b74m623ogq64g" path="res://Global/pause_menu.tscn" id="27_ccohw"]
 [ext_resource type="Script" uid="uid://b3j7gu1q1t1op" path="res://Szene/Tutorial/world_name.gd" id="29_j1xs2"]
@@ -230,16 +229,11 @@ position = Vector2(315, 434)
 [node name="NextLevel" parent="." instance=ExtResource("24_evqb7")]
 position = Vector2(599, 289)
 
-[node name="NextLevelskip" parent="." instance=ExtResource("24_evqb7")]
-visible = false
-position = Vector2(84, 283)
-script = ExtResource("25_i1hnt")
-
 [node name="Figuren" type="Node2D" parent="."]
 position = Vector2(492, 451)
 
 [node name="NPC" parent="Figuren" instance=ExtResource("26_6xejw")]
-position = Vector2(177, -78)
+position = Vector2(175, -81)
 
 [node name="WorldName" type="CanvasLayer" parent="."]
 script = ExtResource("29_j1xs2")

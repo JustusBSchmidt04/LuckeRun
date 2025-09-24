@@ -126,11 +126,6 @@ position = Vector2(125, 115)
 position = Vector2(441, 24)
 script = ExtResource("15_rp4y1")
 
-[node name="NextLevelskip" parent="." instance=ExtResource("16_p87ue")]
-visible = false
-position = Vector2(-142, -14)
-script = ExtResource("15_rp4y1")
-
 [node name="Stift" parent="." instance=ExtResource("16_i7wq0")]
 position = Vector2(411, 16)
 

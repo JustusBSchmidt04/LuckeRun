@@ -107,11 +107,6 @@ offset_bottom = 123.0
 [node name="Respawnpoint" type="Marker2D" parent="."]
 position = Vector2(125, 115)
 
-[node name="NextLevelskip" parent="." instance=ExtResource("15_xow3v")]
-visible = false
-position = Vector2(-144, 6)
-script = ExtResource("16_ys6ev")
-
 [node name="NextLevel" parent="." instance=ExtResource("15_xow3v")]
 position = Vector2(557, 323)
 script = ExtResource("16_ys6ev")
